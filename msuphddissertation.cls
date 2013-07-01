@@ -148,7 +148,7 @@
       \thispagestyle{plain}
       \pagestyle{plain}
        \begin{center}
-     {\bfseries\ackname}
+     {\ackname}
      \vspace{\baselineskip}
      \end{center}
      \begin{doublespace}
