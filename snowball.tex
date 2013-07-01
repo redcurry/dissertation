@@ -331,79 +331,16 @@ with a Gamma distribution for DMIs and compared the models using AIC
 \citep{bol08}.
 %
 We found that the quadratic model explained the whole dataset better
-than the linear model (Table~\ref{table:AIC}, Fig.~\ref{dmi-and-hybrids}A),
-but 5/20 replicates were better explained by a linear model
-(Table~\ref{table:AIC}, Fig.~S1).
+than the linear model (Fig.~\ref{dmi-and-hybrids}A),
+although there was considerable variation per replicate
+(Fig.~\ref{fig:indiv-dmi}).
 %
 These results indicate that the overall accumulation of pairwise DMIs
 was consistent with the snowball effect.
 
 
 
-\begin{table}
-\centering
-\begin{tabular}{ccc}
-\hline
-Replicate & DMI model (Akaike weight) &
-  Hybrid inviability model (Akaike weight) \\
-\hline
-1   & quadratic (0.932) & quadratic (0.680) \\
-2   & quadratic (1.000) & quadratic (1.000) \\
-3   & quadratic (0.539) & linear (0.737) \\
-4   & quadratic (0.984) & quadratic (1.000) \\
-5   & quadratic (0.994) & quadratic (0.995) \\
-6   & quadratic (0.998) & linear (0.665) \\
-7   & quadratic (1.000) & quadratic (0.961) \\
-8   & quadratic (1.000) & quadratic (0.950) \\
-9   & quadratic (0.996) & quadratic (0.613) \\
-10  & quadratic (0.608) & quadratic (0.638) \\
-11  & linear (0.600)    & quadratic (0.981) \\
-12  & quadratic (1.000) & quadratic (0.992) \\
-13  & quadratic (0.983) & quadratic (0.993) \\
-14  & quadratic (1.000) & linear (0.583) \\
-15  & linear (0.654)    & linear (0.708) \\
-16  & quadratic (0.999) & quadratic (0.975) \\
-17  & linear (0.704)    & linear (0.761) \\
-18  & quadratic (1.000) & linear (0.623) \\
-19  & quadratic (1.000) & quadratic (0.937) \\
-20  & quadratic (0.931) & quadratic (1.000) \\
-\hline
-Overall & quadratic (1.000) & linear (0.675) \\
-\hline
-\end{tabular}
-\caption{Best model based on AIC for each replicate and overall.}
-\label{table:AIC}
-\end{table}
-
-
-
-\subsection{Hybrid inviability increased linearly through time}
-
-To measure hybrid inviability (i.e., number of unfit hybrids) through time,
-we first created 10,000 hybrids between each replicate pair of species
-every 400 generations.
-%
-Hybrids were created in the same way Avida recombines two genotypes:
-two random but homologous regions of the parental genomes were exchanged.
-%
-Note that hybrids were created after the experiments were done,
-using the populations we saved every 400 generations;
-no hybridization between populations occurred during their evolution.
-%
-We then measured the fitness of each hybrid and counted the number
-(out of 10,000) that had a relative fitness $<$~0.75.
-%
-We found that the overall number of unfit hybrids through time
-increased linearly (Table~\ref{table:AIC}, Fig.~\ref{dmi-and-hybrids}B),
-although 9/20 replicates were better explained by a quadratic model
-(Table~\ref{table:AIC}, Fig.~S2).
-%
-These results are consistent with a missing snowball for hybrid inviability
-and therefore suggest that the fitness effects of DMIs were not additive.
-
-
-
-\begin{figure}[p]
+\begin{figure}
 \begin{center}
 \includegraphics[height=6in]{dmi-and-hybrids.pdf}
 \end{center}
@@ -428,6 +365,54 @@ and therefore suggest that the fitness effects of DMIs were not additive.
   The gray lines represent the bootstrap 95\%
   confidence intervals of the means.}
 \label{dmi-and-hybrids}
+\end{figure}
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.9\linewidth]{dmi-counts-indiv-plots.pdf}
+\end{center}
+\caption{Number of pairwise DMIs through time
+  between each replicate pair of populations.}
+\label{fig:indiv-dmi}
+\end{figure}
+
+
+
+\subsection{Hybrid inviability increased linearly through time}
+
+To measure hybrid inviability (i.e., number of unfit hybrids) through time,
+we first created 10,000 hybrids between each replicate pair of species
+every 400 generations.
+%
+Hybrids were created in the same way Avida recombines two genotypes:
+two random but homologous regions of the parental genomes were exchanged.
+%
+Note that hybrids were created after the experiments were done,
+using the populations we saved every 400 generations;
+no hybridization between populations occurred during their evolution.
+%
+We then measured the fitness of each hybrid and counted the number
+(out of 10,000) that had a relative fitness $<$~0.75.
+%
+We found that the overall number of unfit hybrids through time
+increased linearly (Fig.~\ref{dmi-and-hybrids}B),
+although there was considerable variation per replicate
+(Fig.~\ref{fig:indiv-unfit-hybrids}).
+%
+These results are consistent with a missing snowball for hybrid inviability
+and therefore suggest that the fitness effects of DMIs were not additive.
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.9\linewidth]{unfit-hybrid-counts-indiv-plots.pdf}
+\end{center}
+\caption{Number of unfit hybrids (out of 10,000) through time
+  between each replicate pair of populations.}
+\label{fig:indiv-unfit-hybrids}
 \end{figure}
 
 
