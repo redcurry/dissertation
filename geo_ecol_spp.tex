@@ -34,25 +34,6 @@ its effectiveness in generating reproductive isolation
 compared to ecological speciation is unknown.
 
 
-%Future work should
-%aim to infer the roles of gene ﬂow, drift and selection in
-%overall divergence and the ﬁxation of individual speciation
-%genes (see Question 7) and compare their contributions
-%across speciation events in different taxa and environments.
-%(Marie Curie speciation group)
-
-
-%It is now accepted that the
-%evolution of reproductive barriers without
-%spatial separation or in secondary contact zones is a plausible route
-%to speciation
-%(Smadja 2011)
-
-
-%There is no reinforcement, no sexual selection,
-%simply adaptation to resources in separate environments
-
-
 
 The main purpose of this study is to directly compare
 the strength of reproductive isolation
@@ -70,7 +51,6 @@ under a mutation-order process will be weaker than under an ecological process.
 
 
 
-
 We also examine the effect of migration
 on both ecological and mutation-order processes.
 %
@@ -80,7 +60,7 @@ although gene flow can also promote divergence \citep{gar06,ras08}.
 %
 We vary the amount of migration between populations
 under both ecological and mutation-order processes,
-from allopatry to parapatry to sympatry.
+from allopatry to sympatry.
 %
 We expect that migration will have a stronger negative effect
 on the evolution of reproductive isolation under mutation-order scenarios
@@ -90,23 +70,12 @@ favored in the other \citep{sch09,nos09b,nos11}.
 
 
 
-% IMPORTANT: Gene flow is not the same as migration
-% (Whitlock and McCauley, 1999)
-
-% I need so say somewhere here why my selective pressures are so strong,
-% why didn't I vary other parameters, like mutation rate, population size
-% possible reason: we want to COMPARE ecological vs. mutation-order,
-%   not under which parameters it is likely to occur,
-%   which has been studies elsewhere (e.g., Nosil & Flaxman, Gavrilets 2000)
-
-
-
 We also examine how the environments' dimensionality
 (i.e., number of selective pressures)
 affects the strength of reproductive isolation
 for both ecological and mutation-order processes.
 %
-In highly dimensional environments,
+In high-dimensional environments,
 there are more opportunities for populations
 to adapt in different ways \citep{ric93,nos09},
 which may lead to stronger reproductive isolation
@@ -141,62 +110,6 @@ such expectation diminishes the more populations diverge \citep{sch09}.
 
 
 
-%Take-home message(s):
-
-%Ecological speciation is more effective at creating R.I.
-%- Result: Under all migration rates,
-%  RI from divergent selection was stronger than mutation order
-%  - Explanation: In mut-order, similar loci evolve
-%    because genome arch. is constrained by the environment
-
-%Some gene flow permits R.I. in ecological spp, but not in mutation order
-%- Result: Ecological R.I. decreases with migration;
-%  Mut-order R.I. present only w/ 0 migration; otherwise, no R.I.
-%  - related: mut-order adaptation proceeds the same way w/ migration
-
-%Speciation more readily in multifarious selection
-%- Result: Weaker R.I. overall at low-dim than at hi-dim
-%  - Explanation: Possibly because of more genome divergence;
-%    in ecol., at high migration rate (0.1), no R.I at low-dim,
-%    but high R.I. at hi-dim; in lo-dim, demes adapt to both environments
-  
-%In mut-order, even though similar loci evolve, they are not exact
-%- Result: In unlinked hybridization, mut-order R.I. is as strong as ecol.
-
-%In drift, genetic incompatibilities do occur
-%- Result: In unlinked hybridization, drift R.I. is moderate
-
-% Relevant?
-%In mut-order, R.I. may depend on where hybrids find themselves
-%- Result: Mut-order hybrids sometimes do better than one of the parents,
-%  but worse than the other (forming a kind of "bubble" through time)
-
-
-
-%%% METHODS %%%
-
-% General settings
-%Mass action
-%Sexual reproduction
-%Child size range = 1.0
-%Rewards are additive.
-%Copy mutations not allowed.
-%Mutation rate is U = 0.1
-%No other types of mutations
-
-% Experimental design 3
-%To generate the ancestral population,
-%we ran 50 replicates of a \emph{world} of size 10,000
-%initiated with a simple digital organism of genome length 200
-%for 500,000 updates ($\sim$ 42,000 generations).
-%%
-%The environment rewarded the standard nine logic tasks. % cite lenski
-%%
-%We then randomly selected one replicate
-%that could perform all nine tasks at the end of the run.
-
-
-
 In this study, we use the software Avida to carry out our experiments.
 %
 Avida \citep{ofr04} is an artificial life research platform
@@ -219,11 +132,9 @@ the details of real biological organisms.
 Instead, digital organisms have a unique genetic system (see Methods).
 %
 Despite these differences, the general principles
-that make evolution possible are still the same.
-%
-Therefore, Avida can be used to test the generality
-of evolutionary theories and hypotheses without making particular assumptions
-about the details of biology.
+that make evolution possible are still the same,
+which allows Avida to be used to test the generality
+of evolutionary theories and hypotheses.
 %
 Indeed, several evolutionary properties
 have been found to be remarkably similar to that of biological organisms
@@ -236,26 +147,10 @@ because in Avida, traits are complex,
 involving multiple loci and epistatic interactions among alleles \citep{len99}.
 
 
-%In ecological speciation, however,
-%populations evolve different phenotypes,
-%and thus the combination of phenotypes
-%inherited by hybrids from both parents
-%cannot all function in either parental environment.
-%%
-%If we assume that the `average' hybrid inherits
-%half its traits from one parent and half from the other,
-%and if there is no genetic incompatibility between
-%the genes controlling these traits,
-%then hybrids from mutation-order speciation
-%should do as well as their parents,
-%but hybrids from ecological speciation
-%should do half as well as their parents.
 
 \section{Methods}
 
 \subsection{Avida}
-
-
 
 Experiments with digital organisms were carried out using Avida (ver.~2.9.0),
 freely available at \url{http://avida.devosoft.org}.
@@ -266,7 +161,7 @@ for a full description, see \citet{ofr04}.
 Avida is highly configurable, so unless otherwise noted,
 the following description applies to the default settings.
 %
-In Avida, digital organisms are composed of
+In Avida, each digital organism consists of several components:
 a linear sequence of instructions (akin to a haploid genome),
 memory space in the form of registers and stacks,
 pointers to memory locations,
@@ -380,35 +275,23 @@ in different ways and with different degrees of efficiency.
 
 
 
-%ecological speciation happens b/c traits under
-%divergent natural selection affect reproductive compatibility
-%- similarly, in avida, traits determine reproductive speed,
-%  when hybrids get a mixture of traits so that they perform
-%  fewer useful traits in a certain environment,
-%  their reproductive speed decreases, so it does
-%  affect reproductive compatibility
-
-
-
 \subsection{Experimental design}
-
-
 
 The Avida configuration files used to run our experiments
 are available in the Dryad Data Repository.
 %
 To generate the ancestral population,
-we initiated an empty `world' under the default nine-task environment
-with an organism that could replicate but could not perform any tasks.
+we founded a population with an organism that could replicate
+but could not perform any tasks.
 %
-We then let this population evolve
+We then let this population evolve under the default nine-task environment
 for 500,000 updates ($\sim$~42,000 generations).
 %
 An `update' is a measurement of time in Avida, increasing by one each time
 organisms execute 60 instructions (on average).
 %
 For the evolution of the ancestral population,
-we set the world size to 10,000 individuals.
+we set the maximum population size to 10,000 individuals.
 %
 The length of the genome was set to 200 instructions,
 and to ensure homologous recombination
@@ -418,18 +301,18 @@ The mutation rate was set to 0.1 mutations per genome per generation.
 
 
 
-We then setup four treatments (described below), which we call
+We then set up four treatments (described below), which we call
 `drift,' `ecological,' `mu\-ta\-tion-or\-der 1,' and `mu\-ta\-tion-or\-der 2.'
 %
 For each treatment,
-the world size was set to 2,000 individuals
+the population size was set to 2,000 individuals
 and divided into two demes, each of size 1,000.
 %
 In the drift treatment, both demes' environments
 were the same as the ancestral (environment `A').
 %
 For each remaining treatments,
-we setup two subtreatments (described below):
+we set up two subtreatments (described below):
 low dimensionality and high dimensionality.
 %
 For this study, dimensionality refers to the number of tasks
@@ -454,9 +337,8 @@ and environment `2H' for high dimensionality).
 
 
 
-The tasks rewarded for each environment
-are shown in Table \ref{table:env}
-and remained as such for the rest of this study.
+The specific tasks that were rewarded in each environment
+remained the same for the rest of this study.
 %
 The number of tasks for the low and high environments
 were chosen as two extremes: two tasks for low dimensionality
@@ -466,56 +348,12 @@ into two demes) for high dimensionality.
 The specific tasks for environments 1L and 2L were chosen at random
 from tasks that were known to evolve within 10,000 updates in preliminary runs.
 %
-Note that environments 1L and 2L share no tasks;
-similarly, environments 1H and 2H share no tasks.
-
-\begin{table}
-\centering
-\begin{tabular}{ccccc}
-\hline
-\multicolumn{5}{c}{Environment} \\
-\hline
-A & 1L & 2L & 1H & 2H \\
-\hline
-NOT&3BO&3BH&3AC&3AA \\
-NAND&3CI&3BJ&3AD&3AB \\
-AND&&&3AE&3AF \\
-ORN&&&3AG&3AH \\
-OR&&&3AL&3AI \\
-ANDN&&&3AO&3AJ \\
-NOR&&&3AP&3AK \\
-XOR&&&3AQ&3AM \\
-EQU&&&3AR&3AN \\
-&&&3AS&3AT \\
-&&&3AU&3AV \\
-&&&3AW&3AZ \\
-&&&3AX&3BE \\
-&&&3AY&3BG \\
-&&&3BA&3BH \\
-&&&3BB&3BI \\
-&&&3BC&3BJ \\
-&&&3BD&3BL \\
-&&&3BF&3BM \\
-&&&3BK&3BN \\
-&&&3BO&3BQ \\
-&&&3BP&3BS \\
-&&&3BR&3BX \\
-&&&3BT&3BY \\
-&&&3BU&3BZ \\
-&&&3BV&3CA \\
-&&&3BW&3CB \\
-&&&3CF&3CC \\
-&&&3CH&3CD \\
-&&&3CI&3CE \\
-&&&3CJ&3CG \\
-&&&3CL&3CK \\
-&&&3CM&3CN \\
-&&&3CO&3CP \\
-\hline
-\end{tabular}
-\caption{Tasks rewarded in each environment.}
-\label{table:env}
-\end{table}
+Environments 1L and 2L shared no tasks;
+similarly, environments 1H and 2H shared no tasks.
+%
+The specific tasks rewarded in each environment
+are part of the Avida configuration files,
+which are available in the Dryad Data Repository.
 
 
 
@@ -653,7 +491,7 @@ $F_{\mathrm{ST}}$ values between 0 and 0.05
 would indicate little or no genetic divergence
 between two demes \citep[p. 118]{har97}.
 %
-We expect that under no migration
+We expect that under zero migration
 $F_{\mathrm{ST}}$ values will be significantly higher
 than those under the 0.01 migration rate.
 %
@@ -693,8 +531,6 @@ under 0.0 and 0.01 migration and highlighted the mutations we found above.
 
 \subsection{Hybrid phenotypes}
 
-
-
 To examine a possible cause for differences
 in hybrid fitness between ecological and mutation-order processes,
 we counted the number of times that hybrids had low fitness
@@ -721,11 +557,30 @@ We then determined the tasks that these component genotypes
 as well as the original hybrid could perform.
 %
 If either component genotype could perform a task
-but the hybrid could not, then at least one DMI was present.
+but the hybrid could not, then at least one DMI was present
+(Figure \ref{fig:hybrid_components}).
 %
 We performed this analysis on 1,000 hybrids per replicate
 in both the ecological and mutation-order treatments
-under no migration, low-dimensionality, and two-point crossover recombination.
+under zero migration, low dimensionality, and two-point crossover recombination.
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=3.5in]{hybrid_components.pdf}
+\caption{Method to determine whether a hybrid contains
+  genetic incompatibilities.
+  %
+  A hybrid is composed of two parental components, C$_{1}$ and C$_{2}$.
+  %
+  Note that a parental component is only the parental region
+  inherited by the hybrid; it is not the complete parent.
+  %
+  If the hybrid cannot perform the task but either parental component can,
+  then there must be at least one incompatibility between the components.}
+\label{fig:hybrid_components}
+\end{figure}
 
 
 
@@ -739,7 +594,7 @@ because an organism may have the ability to perform a task
 even if the environment does not reward for it.
 %
 For simplicity, we focused only on
-the no migration, low dimensionality set of treatments
+the zero migration, low dimensionality set of treatments
 that were hybridized with a two-point crossover.
 %
 For the ecological treatment,
@@ -791,49 +646,10 @@ that some of the hybrids were unfit.
 
 \section{Results}
 
-%Take-home message(s):
-
-%Ecological speciation is more effective at creating R.I.
-%- Result: Under all migration rates,
-%  RI from divergent selection was stronger than mutation order
-%  - Explanation: In mut-order, similar loci evolve
-%    because genome arch. is constrained by the environment
-
-%Some gene flow permits R.I. in ecological spp, but not in mutation order
-%- Result: Ecological R.I. decreases with migration;
-%  Mut-order R.I. present only w/ 0 migration; otherwise, no R.I.
-%  - related: mut-order adaptation proceeds the same way w/ migration
-
-%Speciation more readily in multifarious selection
-%- Result: Weaker R.I. overall at low-dim than at hi-dim
-%  - Explanation: Possibly because of more genome divergence;
-%    in ecol., at high migration rate (0.1), no R.I at low-dim,
-%    but high R.I. at hi-dim; in lo-dim, demes adapt to both environments
-  
-%In mut-order, even though similar loci evolve, they are not exact
-%- Result: In unlinked hybridization, mut-order R.I. is as strong as ecol.
-
-%In drift, genetic incompatibilities do occur
-%- Result: In unlinked hybridization, drift R.I. is moderate
-
-% Relevant?
-%In mut-order, R.I. may depend on where hybrids find themselves
-%- Result: Mut-order hybrids sometimes do better than one of the parents,
-%  but worse than the other (forming a kind of "bubble" through time)
-
-
 \subsection{Postzygotic reproductive isolation}
 
-% I want readers to quickly tie the results w/ their expectations,
-% so in the Intro I must have explained what each factor
-% is expected to do to R.I. and its significance
-
-% Readers need to know:
-% - if hybrid fitness is lower in one treatment vs. another
-%   then R.I. is stronger in that treatment
 When hybrids between the evolved demes
-were created by recombining a single genetic region
-(`two-point crossover'), % possible figure explaining hybridization types
+were created by recombining a single genetic region (`two-point crossover'),
 reproductive isolation between demes
 that adapted to different environments (ecological treatment)
 was considerably stronger than
@@ -841,6 +657,16 @@ reproductive isolation between demes
 that adapted to the same environment (mutation-order treatment)
 (Figs. \ref{hybrid_fitness}A and \ref{hybrid_fitness}B).
 %
+With zero migration, for instance,
+reproductive isolation in the ecological treatment
+was more than twice as strong than in the mutation-order treatment.
+%
+There was no reproductive isolation between demes
+evolving neutrally in the ancestral environment (drift treatment):
+the mean hybrid fitness was $>$~0.99 at all migration rates.
+
+
+
 \begin{figure}
 \centering
 \includegraphics[width=0.95\linewidth]{hybrid_fitness.pdf}
@@ -860,26 +686,9 @@ that adapted to the same environment (mutation-order treatment)
   up to 100 regions were exchanged.}
 \label{hybrid_fitness}
 \end{figure}
-%
-With no migration, for instance,
-reproductive isolation in the ecological treatment
-was more than twice as strong than in the mutation-order treatment.
-%
-%Reproductive isolation in the Ecological treatment, however,
-%was never `complete':
-%the mean hybrid fitness was never below about 0.5.
-%
-% Readers need to know:
-% - Drift is expected to not show much R.I.
-There was no reproductive isolation between demes
-evolving neutrally in the ancestral environment (drift treatment):
-the mean hybrid fitness was $>$~0.99 at all migration rates.
 
 
 
-% Readers need to know:
-% - Mutation-order treatment is more sensitive to gene flow,
-%   Ecological treatment can withstand some gene flow and still have R.I.
 Reproductive isolation in the mutation-order treatment
 was more sensitive to gene flow than in the ecological treatment
 (Figs. \ref{hybrid_fitness}A and \ref{hybrid_fitness}B).
@@ -888,11 +697,13 @@ At the 0.01 migration rate, for instance,
 the mean hybrid fitness in the mutation-order treatment was $>$~0.98,
 but in the ecological treatment reproductive isolation
 was almost as strong as without migration.
+%
+The mutation-order 2 treatment was more sensitive to gene flow
+than the mutation-order 1 treatment
+(no reproductive isolation at a migration rate of 0.00001).
 
 
 
-% Readers need to know:
-% - High dimensinoality is expected to form stronger R.I.
 When the environment rewarded for many tasks (high dimensionality),
 reproductive isolation was often stronger than
 when the environment rewarded for only two tasks (low dimensionality)
@@ -902,8 +713,8 @@ Figs. \ref{hybrid_fitness}C and \ref{hybrid_fitness}D).
 This pattern was most evident in the ecological treatment,
 even at moderately high migration rates;
 for example, the mean hybrid fitness in the ecological treatment
-at 0.1 migration was 0.97 under low dimensionality %(0.9556156,0.9813019) 95%CI
-but only 0.74 under high dimensionality. % (0.7196453, 0.7576181) 95% CI
+at 0.1 migration was 0.97 under low dimensionality
+but only 0.74 under high dimensionality.
 %
 In the mutation-order treatments, however,
 reproductive isolation under high dimensionality at migration rates $>$ 0
@@ -912,9 +723,6 @@ showing again that mutation-order was sensitive to gene flow.
 
 
 
-% Readers need to know:
-% - Fine recombination can test for how well nearby alleles work together
-% - Strong R.I. in this case means divergence
 When hybrids between the evolved demes
 were created by recombining up to 100 genetic regions
 (`multiple-point crossover'),
@@ -938,34 +746,54 @@ was now smaller than that with two-point crossover.
 Reproductive isolation in the mutation-order treatment
 remained more sensitive to gene flow than in the ecological treatment.
 %
-% Readers need to know:
-% - Divergence can build by genetic drift alone
 Reproductive isolation in the genetic drift treatment with little migration
 was significantly greater than with two-point crossover.
-%but at migration rate $>$ 0.01
-%mean hybrid fitness was $>$ 0.95.
 %
-% Readers need to know:
-% - Mutation-order and Ecological treatments
-%   are expected to form stronger R.I. than Genetic drift
-% - How sensitive is genetic drift to gene flow?
 Interestingly, reproductive isolation in the genetic drift treatment
 with 0.00001 migration and high dimensionality
 was even greater than in the mutation-order 2 treatment.
 
 
-% I DON'T HAVE A CONTROL FOR FREE RECOMBINATION;
-% THUS, RI SEEN IN DRIFT MAY NOT BE REAL
-
 
 \subsection{Genetic divergence}
 
-The genetic divergence under no migration was significantly higher
+The genetic divergence under zero migration was significantly higher
 than that under 0.01 migration for all treatments (Table \ref{tbl_fst}),
 demonstrating that gene flow between populations had a homogenizing effect.
 %
+Under 0.01 migration, the mutation-order treatments had little genetic
+divergence ($F_{\mathrm{ST}} <$ 0.05), which was significantly lower than the
+ecological treatments, suggesting that the mutation-order treatments were more
+sensitive to gene flow than the ecological treatments.
+%
+Interestingly, the drift treatment under zero migration showed high levels of
+genetic divergence, as high as the ecological and mutation-order treatments for
+low dimensionality.
+%
+Under zero migration, the genetic divergence for each treatment for high
+dimensionality was significantly higher than those for low dimensionality.
+%
+Under 0.01 migration, the genetic divergence for the ecological treatment for
+high dimensionality was significantly higher than that for low dimensionality,
+but for the mutation-order treatments there was no difference in the genetic
+divergence between low and high dimensionalities.
+%
+In agreement with these results,
+the sequences for each pair of demes for treatments
+under zero migration did not align as well as those
+under 0.01 migration (Fig. \ref{task_muts}).
+%
+These result suggest that the reason that reproductive isolation
+was mostly absent under a mutation-order process with gene flow
+is that the key mutations that allowed organisms to perform tasks were the same
+(i.e., no genetic divergence for task-related mutations).
+
+
+
 \begin{table}
 \centering
+\caption{Genetic divergence ($F_{\mathrm{ST}}$)
+  between demes for each treatment.}
 \begin{tabular}{llcc}
 \cline{3-4}
   & & \multicolumn{2}{c}{Migration rate} \\
@@ -986,57 +814,19 @@ High & Mutation-order 2 & 0.3758$^{f}$ & 0.0199$^{b}$ \\
   that those values are not significantly different
   (95\% bootstrap confidence interval).}
 \end{tabular}
-\caption{Genetic divergence ($F_{\mathrm{ST}}$)
-  between demes for each treatment.}
 \label{tbl_fst}
 \end{table}
-%
-Under 0.01 migration, the mutation-order treatments had little genetic
-divergence ($F_{\mathrm{ST}} <$ 0.05), which was significantly lower than the
-ecological treatments, suggesting that the mutation-order treatments were more
-sensitive to gene flow than the ecological treatments.
-%
-Interestingly, the drift treatment under no migration showed high levels of
-genetic divergence, as high as the ecological and mutation-order treatments for
-low dimensionality.
-%
-Under no migration, the genetic divergence for each treatment for high
-dimensionality was significantly higher than those for low dimensionality.
-%
-Under 0.01 migration, the genetic divergence for the ecological treatment for
-high dimensionality was significantly higher than that for low dimensionality,
-but for the mutation-order treatments there was no difference in the genetic
-divergence between low and high dimensionalities.
 
 
-
-In the mutation-order treatment,
-the derived alleles necessary to perform
-each task in a low dimensional environment
-(whether it was Environment 1 or 2)
-were generally clustered together
-(Fig. \ref{task_muts}).
-%
-Without migration,
-the derived alleles of one deme for a particular task
-were nearby the derived alleles of the other deme for the same task.
-%
-With 0.01 migration, however,
-the derived alleles of one deme for a particular task
-were in almost the exact locations
-as the derived alleles of the other deme for the same task.
-%
-This result suggests that the reason that reproductive isolation
-is mostly absent under a mutation-order process with gene flow
-is that the key mutations that allow organisms to perform tasks are the same
-(i.e., no genetic divergence for important mutations).
 
 \begin{figure}
 \centering
 \includegraphics[height=5in]{task-muts.pdf}
 \caption{Consensus sequences of the first five evolved replicate pairs of demes
-  in the mutation-order~1 treatment under no migration (top)
+  in the mutation-order~1 treatment under zero migration (top)
   and 0.01 migration (bottom).
+  %
+  Similar results were observed for the mutation-order~2 treatment.
   %
   Sequences were 200 instructions in length,
   but only the loci that differed among
@@ -1047,18 +837,6 @@ is that the key mutations that allow organisms to perform tasks are the same
 \label{task_muts}
 \end{figure}
 
-% We cannot estimate effective gene flow because we violate
-% several assumptions (Whitlock and MacCauley 1999)
-
-% Possible discussion point:
-% It is interesting that Fst for mut-order and selection are about the same,
-% but hybridization indicates different levels of differentiation;
-% hybridization shows "functional" differentiation, whereas
-% Fst shows genetic differentiation;
-% this discrepancy in both forms of differentiation
-% shows that gene complexes (tight modules) formed,
-% but were different for different mut-order populations
-%
 
 
 \subsection{Hybrid phenotypes}
@@ -1082,7 +860,7 @@ from each parent (here we focused on the treatments without migration,
 low dimensionality, and two-point crossover).
 %
 In the ecological treatment, we found that hybrids were more likely to perform
-zero, one, or two tasks from one parent and none from the other.
+zero, one, or two tasks from one parent and none from the other
 (Figure \ref{hybrid_counts}A).
 %
 Less than 10\% of hybrids were able to perform all four tasks.
@@ -1109,12 +887,14 @@ even though their parental components
 could perform no tasks or just one task
 (Figure \ref{fit_hybrid_components}A).
 
+
+
 \begin{figure}
 \centering
 \includegraphics[width=0.95\linewidth]{hybrid_counts.pdf}
 \caption{Number of hybrids able to perform certain tasks (see Methods) for
   the (A) ecological, (B) mutation-order-1, and (C) mutation-order-2 treatments
-  under no migration, low dimensionality, and two-point crossover.
+  under zero migration, low dimensionality, and two-point crossover.
   %
   Each point is a hybrid count (out of 1,000) for a single replicate.
   %
@@ -1128,13 +908,15 @@ could perform no tasks or just one task
 \label{hybrid_counts}
 \end{figure}
 
+
+
 \begin{figure}
 \centering
 \includegraphics[width=0.95\linewidth]{fit_hybrid_components.pdf}
 \caption{Number of fit hybrids (i.e., can perform two tasks)
   whose parental components can perform certain tasks (see Methods)
   for the (A) mutation-order 1 and (B) mutation-order 2 treatments
-  under no migration, low dimensionality, and two-point crossover.
+  under zero migration, low dimensionality, and two-point crossover.
   %
   Each point is a hybrid count for a single replicate.
   %
@@ -1150,51 +932,7 @@ could perform no tasks or just one task
 
 
 
-
-
-% Make the following (fine recombination)
-% be part of a prediction derived
-% from the fact that tasks are "modularized"
-
-
 \section{Discussion}
-
-% My results in relation to others' (supported, not supported)
-
-% every argument/paragraph must end with a conclusion
-
-% a conclusion may be:
-% - summary of issue i'm discussing, including my results
-% - a recommendation
-% - a speculation that may lead to a new hypothesis
-% - a new principle
-% - a statement saying that there is no conclusion
-
-% develop my ideas from my results,
-% and relate them to the general scientific discipline
-
-% present limitations of my study
-
-% Discussion discusses relevance, usefulness, and limitations
-% of experiments and results, and possible new research
-
-% Sort my arguments (always derived from results) by most important to least
-% Cat. 1: directly relevant to original hypothesis
-% Cat. 2: also relevant to hypothesis, but less conclusive
-% Cat. 3: not directly relevant to hypothesis, but interesting
-% Cat. 4: not as interesting (thus, eliminate altogether)
-
-% Put more important arguments first and give them more space than others
-% First paragraph: most important point
-
-% Don't make premature generalizations based on data
-
-% Arguments should be based on the best, most-current scientific 'authority'
-
-% Raise possible new hypothesis, or ideas, but based on evidence
-
-% Don't repeat Results, point to Figures/Tables if needed
-
 
 In this study, we used experimental evolution of digital organisms
 to compare the strength of postzygotic reproductive isolation
@@ -1216,7 +954,6 @@ between yeast populations evolved in different environments
 (high-salinity and low-glucose) was around 87\%,
 but hybrids from populations evolved
 under the same environmental conditions were as fit as their parents.
-% I calculated the 87% as mean of (1.22/1.44) and (1/1.12) from their Fig. 2
 %
 Similar patterns were found in a filamentous fungus by \citet{det08},
 although in one of the parental environments
@@ -1230,7 +967,7 @@ stronger reproductive isolation than a mutation-order process.
 
 
 It has been suggested that gene flow during speciation
-may be common \citetext{\citealt{coy04}, p. 112; \citealt{nos08}}.
+may be common \citetext{\citealt{coy04}, p. 112; \citealt{nos08}},
 which requires that genetic divergence with gene flow be possible.
 %
 We found that a migration rate of 1\% was not enough to prevent
@@ -1248,86 +985,19 @@ is more sensitive to gene flow than ecological speciation.
 that genetic divergence under a mutation-order process
 did not occur $>$~1\% gene flow.
 %
-Therefore, different populations under similar selective pressures
+One of the mutation-order treatments under high dimensionality
+was even sensitive to a migration rate of 0.00001.
+%
+We speculate that in this treatment (corresponding to environment 2H),
+there was one or more large-effect adaptive mutation(s) that,
+when migrated to the other deme, spread quickly and homogenized the demes.
+%
+We conclude that different populations under parallel selective pressures
 probably require almost complete isolation for divergence to occur.
 
 
-%restriction of migration eases the 
-%conditions for speciation (Felsenstein)
 
-%There  is  a  continual  conflict 
-%between  selection,  which  increases  the  as- 
-%sociation  between  isolating  mechanisms, 
-%and  recombination,  which  reduces  it.  Re- 
-%stricting  this  recombination  can  only  im- 
-%prove  chances  for  speciation.
-%(Felsenstein)
-%  - seems like this was in the sence of breaking
-%    the assortative mating locus and adaptations
-%    rather than breaking up adaptations themselves
-%    and thereby producing postzygotic isolation
-
-%gene flow constantly introduces the wrong combination of genes
-%into a local population and recombination breaks-up associations
-%between genes under selection and those causing reproductive isolation
-%(Nosil and Feder)
-
-%It would be interesting to see how strength of selection
-%and mutation rate affect results.
-%- my current strength of selection is s = 1 for each task evolved (quite high)
-%- but this strength seems ok for bacterial populations (Lenski's)
-
-%Theoretical and empirical
-%studies have argued that an intermediate level of gene
-%ﬂow is optimal for adaptive divergence
-%(Smadja 2011)
-%- I don't see this
-
-% People test the constraining effect of gene flow
-% by measuring degree of divergence under allopatry and parapatry,
-% which I have done here and found that the more migration,
-% the lower the divergence (from Garant et al 2006)
-
-
-% Even though hybrids may be unfit, reinforcement does not occur
-% because there is no mate choice mechanism implemented.
-
-
-
-% Future work, Avida could be used to estimate relationship b/w
-% gene flow and migration rates and selection
-
-% Also, I have to explain that with too much gene flow,
-% adaptation doesn't even happen, which is why RI doesn't happen
-
-% Traits causing reproductive isolation:
-% any trait can cause RI because traits determine fitness
-
-
-
-
-
-% 9/26/12
-%Dimensionality:
-
-%Nosil et al. TREE paper (say what I said in Results
-%  and point to literature related to that)
-%In Avida, first allows us to directly manipulate dimensionality;
-%  people do indirect things; nice opportunity how dimenisonality might
-%  affect evolutionary dymics
-%
-%
-%Amount of RI and Fst and "decoupled"; explain what I said to Luke;
-%  (look also at Rice & Hostert, Luke's links in Skype)
-%
-%DMI point should be part of the "Wheraas a migration" paragraph
-%
-%Nosil & Harmon (book chapter); "< 10\% ecol. hybrids" is a minor point;
-%  keep in the same paragraph as "ecol RI > MO RI"
-
-
-
-Reproductive isolation between populations evolving in high dimensional
+Reproductive isolation between populations evolving in high-dimensional
 environments has been predicted and observed to be stronger than in single or
 low dimensional environments \citep{ric93,nos09,nos09b}.
 %
@@ -1342,7 +1012,7 @@ In this study, we were able to control precisely the number of selective
 pressures for the low and high dimensionality treatments.
 %
 We found that under an ecological process, reproductive isolation was stronger
-between populations in high dimensional environments than in low dimensional
+between populations in high-dimensional environments than in low dimensional
 environments.
 %
 Under a mutation-order process, however, this pattern held only when no
@@ -1355,8 +1025,6 @@ flow, environmental dimensionality may not be as important.
 
 
 
-%Amount of RI and Fst and "decoupled"; explain what I said to Luke;
-%  (look also at Rice & Hostert, Luke's links in Skype)
 This conclusion was also supported by our measurements of genetic divergence:
 there was no difference in genetic divergence between low and high
 dimensionality for the mutation-order treatments under some gene flow.
@@ -1366,17 +1034,55 @@ dimensionality was higher than in low dimensionality and higher than the
 mutation-order treatments, again showing that mutation-order treatments were
 more sensitive to gene flow.
 %
-Interestingly, under no migration the drift treatment (where mutations fixed
+Interestingly, under zero migration the drift treatment (where mutations fixed
 neutrally) was as high as the ecological and mutation-order treatments under
 low dimensionality, suggesting that most of the divergence in the ecological
 and mutation-order treatments was actually the result of neutral fixations and
 few adaptive mutations.
 %
-Another result to note is that under no migration, the ecological and
+Indeed, in post-hoc analyses we found that about 90\% of mutational differences
+between these treatments were due to neutral fixations, not adaptive mutations.
+%
+Another result to note is that under zero migration, the ecological and
 mutation-order treatments had about the same level of genetic divergence, which
 is closer to our result with multiple-point crossover than two-point crossover,
 suggesting that in some cases the amount of postzygotic reproductive isolation
 and genetic divergence are decoupled.
+
+
+
+This decoupling between reproductive isolation and genetic divergence
+has been observed in biological populations \citep{ste09,mac12}.
+%
+In these studies, genetic divergence was not found to be a good predictor
+of sexual dimorphism or assortative mating \citep{ste09,mac12}.
+%
+In some cases, genetically closely related species
+were ecologically and phenotypically divergent;
+in other cases, genetically distant species
+were phenotypically and ecologically close \citep{ste09}.
+%
+One proposed reason for this decoupling
+is that temporal changes in selection pressures
+alter the way in which natural and sexual selection interact \citep{mac12}.
+%
+Although assortative mating was not present in our digital populations---%
+there was no mechanism for mate choice---%
+reproductive isolation could not be predicted
+solely based on genetic divergence.
+%
+We speculate that the reason was due to the degree of incompatibility
+between alleles for the different modes of speciation:
+alleles between populations were not as incompatible
+under a mutation-order process than under an ecological process.
+%
+Our results support the notion that reproductive isolation
+is not directly caused by genetic divergence but is a byproduct
+of processes that also affect genetic divergence \citep{per11}.
+%
+Therefore, in order to determine reproductive isolation between populations,
+one cannot rely solely on their genetic divergence;
+reproductive isolation should be measured directly.
 
 
 
@@ -1421,48 +1127,12 @@ may be different under a different recombination method.
 
 
 
-% intermediate environments and intermediate hybrids
-
-% how much intrinsic?
-% if parental halves could perform certain tasks,
-%   but full hybrids could not, then intrinsic (at least partially)
-%   must have occurred
-%   - did it, found more intrinsic under divergent selection
-%     - actual results, format: mean, (2.5%, 97.5%) bootstrap CI, 10000 reps
-%       - MO-1: 69.68075, (40.73553, 101.78947)
-%       - MO-2: 63.71429, (41.00000,  87.14286)
-%       - Sel:  259.1875, (201.0000, 315.0047)
-%     - so about 25.9% of cases were intrinsic for selection,
-%       and about 6.6% of cases were intrinsic for mut-order
-%     - better results, which shows proportion of intrinsic
-%       relative to the total number of non-perfect hybrids
-%       - MO-1: 0.220485, (0.1272438, 0.3289510)
-%       - MO-2: 0.3458778, (0.2643781, 0.4205859)
-%       - Sel:  0.2759421, (0.2144056, 0.3350845)
-%     - so when considering only hybrids that do poorly,
-%       the amounts of instrinsic among treatments is about the same
-%   - method is similar logic by Dettman
-% Rundle & Nosil ("Ecological speciation"):
-%   it is possible that "genetic incompatibilities
-%   evolve more rapidly under divergent selection
-%   and that they are thus an important cause of ecological speciation"
-
-%We found that in both treatments, mutation-order and ecological,
-%the proportion of hybrids which were unfit
-%due to (at least partially) intrinsic incompatibilities was about 30\%.
-%%
-%Thus, genetic incompatibilities did not evolve more frequently
-%under divergent selection, as \citep{run05} predicted.
-
-% the fact that little intrinsic formed in drift,
-% implies that ecol. and mut-order spp promotes intrinsic
-
 Part of the reason that hybrids were more unfit in the ecological treatment
 than in the mutation-order treatment was that in the ecological treatment
 more genetic incompatibilities (DMIs) formed between populations.
 %
-This result confirms the view that genetic incompatibilities
-are a major cause of ecological speciation \citep{run05}.
+This result supports the view that genetic incompatibilities
+are an important cause of ecological speciation \citep{run05}.
 %
 Another reason that hybrids were more unfit in the ecological treatment was
 that for a hybrid to be fully fit it had to inherit both sets of tasks from
@@ -1476,14 +1146,16 @@ mutation-order treatment hybrids often inherited one task from each parent.
 
 
 
-The strength of selection in the low dimensionality environments
-was greater than that in the high dimensionality environments.
+We found that the selection coefficients of adaptive alleles
+in the low dimensionality environments were higher
+than that in the high dimensionality environments.
 %
 An opposite trend may have made it difficult to know whether
 it was higher dimensionality or stronger selection that resulted
 in hybrids being less fit under high dimensionality than low dimensionality.
 %
-The weaker selection in high dimensionality may seem puzzling at first.
+The smaller selection coefficients in the high dimensionality environments
+may seem puzzling at first.
 %
 But given that each additional task an organism could perform gives it
 an equal amount of merit, the higher the merit, the less an additional task
@@ -1496,9 +1168,9 @@ The strengths of selection in either environment are nevertheless high overall,
 but it is not uncommon for selection to be high in new environments
 \citep[e.g.,][]{len91,det07}.
 %
-Future studies could determine how the strength of selection may affect
+Future studies could investigate how the strength of selection may affect
 the strength of postzygotic isolation
-by testing a range of selection strengths.
+by manipulating the selection coefficients in each environment.
 
 
 
@@ -1531,63 +1203,7 @@ specific details about how biological organisms work.
 
 
 
-% Interestion question for discussion / future work
-% is there a time-point in M-O in which mutations
-% are no longer adaptive in BOTH populations due to the fact
-% that early divergence causes divergent evolutionary paths?
-% (idea from Schluter 2009)
-
-
-% Simulations by Thibert find lower fitness
-% in hybrids the stronger environmental diffs are.
-
-% Computer simulations by Thibert-Plante find that increasing migration
-% results in lower hybrid f5itness b/c hybrids compete with each other.
-% We see the oppsoite---resources are not limited
-
-% Dispersal had little effect on Fst (Thibert)
-
-
-
-%Understanding mechanisms of speciation
-%- m-o least understood
-%  - may be important in small regions (similar environments), like islands
-%  - but islands may have the most gene flow
-%%- drift speciation is difficult (see Ch. 11 of Coyne & Orr)
-%%  - very slow, especially in large populations
-%%  - but may be important in founder events, bottlenecks
-%% ** maybe put drift spp earlier
-
-
-
-%gene flow constrains adaptive divergence during ecol. spp
-%- we also see it (more) in mut-order
-
-%Dimensionality in Avida is not necessarily orthogonal,
-%as tasks may overlap in instruction use
-
-% sch09b says that RI is easier by ecol. spp
-% also: "There is a higher
-% probability that the same or equivalent mutations will fix under
-% parallel selection than under divergent selection, which will slow
-% the rate of divergence between populations experiencing similar
-% selection pressures"
-
-% say somewhere that there is standing genetic variation,
-% and that this contributed to parallel evolution in M.O.
-
-
-%Luke: genetic distances, it's more than just that                               
-%- call it something else, or use a real genetic distance                        
-%- no. pairwise differences within pops and b/w pops,
-%  1 - 1/bw 
-%  - to correct for saturation: Nei's distance
-%
-%Include more on speciation in Discussion
-
-
-
-\section{Acknowledgments}
+\section*{Acknowledgments}
 
 I would like to thank my co-author on this work, Luke Harmon,
 who reviewed this manuscript several times and provided me with great ideas.
@@ -1605,6 +1221,7 @@ the National Science Foundation under Cooperative Agreement No. DBI-0939454.
 Any opinions, findings, and conclusions or recommendations
 expressed in this material are those of the author(s)
 and do not necessarily reflect the views of the National Science Foundation.
+
 
 \end{doublespace}
 
