@@ -1,7 +1,7 @@
 \begin{doublespace}
 
-\addcontentsline{toc}{chapter}{Introduction}
 \chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
 
 % Possible order:
 % 1. sgv
@@ -15,7 +15,140 @@
 % 5. snowball
 %    - quadratic increase in DMIs... maybe linear for hybrid incomp.
 
-% SGV
+% Rough ideas for Introduction:
+% - General: I think I want to emphasize that I'm using Avida
+%   to answer question in adaptation and speciation that are difficult
+%   to track with biological organism, and models are too simplistic.
+% - First paragraph: Talk about genetics of adaptation
+%   and mention that tracking individual mutations is important
+% - Second paragraph: Talk about genetics of speciation
+%   (emphisize on postzygotic) and that it is important
+%   to understand those mutations that cause incompatibilities
+% - Say that first I'm going to briefly overview how Avida works,
+%   then say that I'm going to summarize my chapters
+
+\section*{Study system: Avida}
+\addcontentsline{toc}{section}{Study system: Avida}
+\label{sec:avida}
+
+In this section, we provide a brief overview of Avida;
+for a full description, see \cite{ofr04}.
+%
+Avida is freely available at \url{http://avida.devosoft.org}.
+%
+In Avida, digital organisms are composed of
+a linear sequence of instructions (akin to a haploid genome),
+memory space in the form of registers and stacks,
+pointers to memory locations,
+and a central processing unit (CPU) that executes instructions.
+%
+The instruction set makes up an assembly-like programming language,
+consisting of instructions for arithmetic operations,
+memory manipulation (e.g., swapping registers or pushing into a stack),
+conditional execution, iteration, input/output operations,
+and allocation and copying of memory.
+%
+Organisms execute their instructions sequentially,
+sometimes skipping instructions for conditional statements
+or repeating the same instructions inside a loop;
+when the last instruction is executed,
+execution starts again at the first instruction.
+%
+By executing instructions in their genomes,
+organisms are able to (1) replicate and (2) perform computational `tasks'
+that increase the speed at which they replicate and thus increase fitness.
+
+
+
+To replicate, an allocation instruction creates the memory space
+required by the organism's offspring, and a copy instruction inside a loop
+allows the organism to copy itself into the new memory space.
+%
+The copy instruction that allows organisms to replicate
+has a configurable probability of making mistakes,
+which introduces various kinds of mutations.
+%
+By default, replication is asexual.
+%
+However, Avida may be configured to perform sexual replication,
+in which the genomes of two asexually-produced offspring are recombined
+by exchanging two randomly-sized regions of their genomes.
+%
+The offspring (whether clonal or recombinants) are put into the population
+in random locations, replacing whatever organisms were already there.
+%
+Generations are therefore overlapping, as offspring are born continuously,
+replacing older individuals but who are likely not their parents.
+
+
+
+In addition to replication, genomic instructions allow organisms
+to acquire 32-bit input values and use them to perform computational tasks.
+%
+Tasks are boolean operations, such as NOT, AND, and OR,
+and are applied to input values bit by bit.
+%
+For example, if input values were 8 bits,
+the operation 10011101 AND 11101011 would produce 10001001
+according to the rules of boolean logic for AND
+(0~AND~0~=~0, 0~AND~1~=~0, 1~AND~0~=~0, and 1~AND~1~=~1.
+%
+In Avida, however, there is no AND operation nor any other boolean operation
+except for NAND, from which all other boolean operations may be built,
+a property of NAND known as `functional completeness' in boolean algebra.
+%
+For example, P~AND~Q, where P and Q are input values,
+is equivalent to (P~NAND~Q)~NAND~(P~NAND~Q).
+%
+Therefore, in order to perform a task other than NAND,
+digital organisms must make use of other instructions available,
+which arise through mutation or recombination.
+
+
+
+When an organism performs a task, the organism's `merit' is increased
+by a specific amount, specified in a configuration file, for that task.
+%
+The merit of an organism is a unitless value used by Avida
+to determine the number of instructions an organism may execute each time step.
+%
+If two organisms had the same merit,
+they would execute the same number of instructions at each time step;
+however, if one organism had twice the merit as another,
+the first organism would execute twice the number of instructions
+compared to the second in a single time step.
+%
+Thus, an organism with twice the merit as another
+would replicate twice as fast.
+%
+Organisms initially inherit the merit of their parents;
+otherwise, new organisms would be at a disadvantage
+compared to the rest of the population.
+%
+The default environment rewards for nine binary (i.e., two-input) tasks.
+
+
+
+Adaptation in Avida occurs naturally (i.e., it is not simulated),
+as a result of the three ingredients required for natural selection:
+inheritance, variation, and differential reproduction.
+%
+Inheritance comes from replication (sexual or asexual),
+variation comes from mutation and recombination,
+and differential reproduction comes from their rate of replication
+(determined by their replication code and performance of tasks).
+%
+The ability to perform tasks evolves as organisms with the right mutations
+replicate faster than others and therefore take over the population.
+%
+There are many ways in which to perform any one task,
+and independently evolved organisms often evolve the same task
+in different ways and with different degrees of efficiency.
+
+
+
+\section*{Dissertation summary}
+\addcontentsline{toc}{section}{Dissertation summary}
 
 Evolutionary adaptation to a new environment
 depends on the availability of beneficial alleles.
@@ -49,47 +182,132 @@ under these two sources of genetic variation.
 
 
 
-In Chapter~\ref{chap:sgv} (p.~\pageref{chap:sgv}),
-I explored the importance of standing genetic variation
-in adaptation to a new environment.
+Various processes may drive a biological population to acquire mutations
+that reduce its fitness (i.e., ``deleterious mutations'').
 %
-I determined the frequency in which adaptation
-proceeded via standing genetic variation vs. new mutations
-as well as the extent and speed of adaptation
-from these two sources of alleles.
+A population with deleterious mutations may fully or partially recover
+in fitness in two ways: reversion or compensatory adaptation.
+%
+Compensatory adaptation is the fixation of mutations
+that ameliorate the effects of deleterious mutations
+while the original deleterious mutations remain fixed.
+%
+Reversion is often the best way to recover and,
+if a revertant mutation were to appear, the most probable route.
+%
+However, it has been found experimentally that
+there are more compensatory mutations available
+than the single revertant.
+%
+It has also been found that once compensatory adaptation
+has begun, reversion becomes an increasingly improbable route
+because the effect of the reversion changes with the genetic background.
+%
+Therefore, it seems that reversion has a limited
+window of opportunity in which its full effect would be beneficial.
+%
+The fitness effect of the deleterious mutation,
+the population size, and the mutation rate are three main factors
+that will affect this window of opportunity.
 %
 In Chapter~\ref{chap:comp_rate} (p.~\pageref{chap:comp_rate}),
-I estimated the probability of compensatory adaptation
-under various experimental conditions.
+we used populations of digital organisms
+to investigate the effect of these factors.
 %
-I varied three factors important to the dynamics of compensatory adaptation:
-the fitness effect the initial deleterious mutation,
-the population size, and the mutation rate.
+We found that the lower the initial fitness of the population,
+the smaller the window of opportunity for reversion.
+%
+This result was partly caused by the stronger negative interactions
+between compensatory mutations and the reversion.
+%
+We found that the window of opportunity for reversion
+was highest the larger the population size,
+but compensatory adaptation was most probable
+at intermediate population sizes and lowest at the extremes.
+%
+Finally, we found that the higher the mutation rate,
+the larger the window of opportunity reversion,
+but it was smaller than expected because
+the higher mutation rate caused more negative interactions
+with compensatory mutations to occur.
+
+
+
+Epistatic interactions among compensatory mutations that have
+evolved in separate populations may form an intrinsic
+postzygotic isolating barrier (i.e., hybrid inviability or sterility),
+leading to biological speciation.
+%
+Indeed, about ten percent of genetic differences between species
+comprise compensatory mutations.
 %
 In Chapter~\ref{chap:comp_spp} (p.~\pageref{chap:comp_spp}),
 I tested experimentally whether compensatory adaptation
-can lead to reproductive isolation (specifically, postzygotic isolation).
+can lead to reproductive isolation (specifically, postzygotic isolation)
+and whether it was more rapid and stronger
+than in populations evolved through drift.
 %
-I also measured the speed at which isolation developed
-through compensatory adaptation and the strength of genetic incompatibilities
-that formed among compensatory mutations.
+Surprisingly, the strength of this isolation was independent
+of the effect size of the original deleterious mutations.
 %
-In Chapter~\ref{chap:ecol_mo} (p.~\pageref{chap:ecol_mo}),
-I compared the strength of postzygotic isolation that formed
-between populations that evolved in either different environments
-(`ecological speciation') or parallel environments
+We also find that
+both deleterious and compensatory mutations
+contribute equally to reproductive isolation.
+%
+Our results suggest that compensatory adaptation may be
+an important genetic mechanism of speciation,
+and supports the view that intrinsic postzygotic isolation
+can stem from intrinsic genetic mechanisms.
+
+
+
+Reproductive isolation between populations often evolves as a byproduct of
+independent adaptation to new environments, but the selective pressures of
+these environments may be divergent (`ecological speciation') or uniform
 (`mutation-order speciation').
 %
-For these two modes of speciation,
-I also tested their sensitivity to migration between populations
-and their efficacy under few or many agents of selection (i.e., dimensionality).
+In Chapter~\ref{chap:ecol_mo} (p.~\pageref{chap:ecol_mo}),
+we directly compare the strength of reproductive isolation
+(specifically, postzygotic) generated by
+ecological and mutation-order processes.
 %
-Finally, in Chapter~\ref{chap:snowball} (p.~\pageref{chap:snowball}),
-I determined whether pairs of diverging populations accumulate
-genetic incompatibilities between alleles at a quadratic rate through time
-(the `snowball effect').
+We also tested the effect of gene flow as well as the dimensionality
+(i.e., number of selective pressures) of the environments on the strength
+of postzygotic isolation.
 %
-I compared this relationship to the accumulation of hybrid inviability
-through time.
+We found that ecological speciation generally formed stronger isolation than
+mutation-order speciation, mutation-order speciation was more sensitive to gene
+flow than ecological speciation, and environments with high dimensionality
+formed stronger reproductive isolation than those with low dimensionality.
+%
+How various factors affect the strength of reproductive isolation
+has been difficult to test in biological organisms, but the
+use of artificial life, which provides its own genetic system that evolves,
+allowed us to computationally test the effect of these factors more easily.
+
+
+
+Under the Dob\-zhan\-sky-Mul\-ler model of speciation,
+hybrid inviability or sterility results from the evolution
+of genetic incompatibilities (DMIs) between species-specific alleles.
+%
+This model predicts that the number of pairwise DMIs between species
+should increase quadratically through time,
+but the few tests of this `snowball effect' have had conflicting results.
+%
+In Chapter~\ref{chap:snowball} (p.~\pageref{chap:snowball}),
+we show that pairwise DMIs accumulated quadratically,
+supporting the snowball effect.
+%
+The number of unfit hybrids has been proposed to accumulate faster
+than quadratically because hybrids harbor more complex DMIs,
+but we found that the accumulation was linear.
+%
+We show that more complex genetic interactions involved alleles
+that rescued pairwise incompatibilities, explaining the discrepancy
+between the accumulations of DMIs versus unfit hybrids.
+%
+Our results highlight the importance
+of complex genetic interactions in speciation.
 
 \end{doublespace}

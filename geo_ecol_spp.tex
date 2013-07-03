@@ -110,7 +110,8 @@ such expectation diminishes the more populations diverge \citep{sch09}.
 
 
 
-In this study, we use the software Avida to carry out our experiments.
+In this study, we use the software Avida (see p. \pageref{sec:avida}
+to carry out our experiments.
 %
 Avida \citep{ofr04} is an artificial life research platform
 where digital organisms evolve due to genetic variation, inheritance,
@@ -149,131 +150,6 @@ involving multiple loci and epistatic interactions among alleles \citep{len99}.
 
 
 \section{Methods}
-
-\subsection{Avida}
-
-Experiments with digital organisms were carried out using Avida (ver.~2.9.0),
-freely available at \url{http://avida.devosoft.org}.
-%
-In this section, we provide a brief overview of Avida;
-for a full description, see \citet{ofr04}.
-%
-Avida is highly configurable, so unless otherwise noted,
-the following description applies to the default settings.
-%
-In Avida, each digital organism consists of several components:
-a linear sequence of instructions (akin to a haploid genome),
-memory space in the form of registers and stacks,
-pointers to memory locations,
-and a central processing unit (CPU) that executes instructions.
-%
-The instruction set makes up an assembly-like programming language,
-consisting of instructions for arithmetic operations,
-memory manipulation (e.g., swap registers or push into a stack),
-conditional execution (i.e., `if' statements), iteration (looping),
-input/output operations, and allocation and copying of memory.
-%
-Organisms execute their instructions sequentially,
-sometimes skipping instructions for conditional statements
-or repeating the same instructions inside a loop;
-when the last instruction is executed,
-execution starts again at the first instruction.
-%
-By executing instructions in their genomes,
-organisms are able to (1) replicate and (2) perform computational `tasks'
-that affect the speed at which they replicate and thus increase fitness.
-
-
-
-To replicate, an allocation instruction creates the memory space
-required by the organism's offspring, and a copy instruction inside a loop
-allows the organism to copy itself into the new memory space.
-%
-The copy instruction that allows organisms to replicate
-has a configurable probability of making mistakes,
-therefore introducing various kinds of mutations
-(e.g., point mutations, indel mutations, and slip mutations).
-%
-By default, replication is asexual.
-%
-However, Avida may be configured to perform sexual replication,
-in which the genomes of two asexually-produced offspring are recombined
-by exchanging two randomly-sized regions of their genomes.
-%
-The offspring (whether clonal or two recombinants) are put into the population
-in random locations, replacing whatever organisms were already there.
-%
-Generations are therefore overlapping, as offspring are born continuously,
-replacing older individuals who are likely not their parents.
-
-
-
-In addition to replication, genomic instructions allow organisms
-to acquire 32-bit input values and use them to perform computational tasks.
-%
-Tasks are boolean operations, such as NOT, AND, and OR,
-and are applied to input values bit by bit.
-%
-For example, if input values were 8 bits,
-the operation 10011101 AND 11101011 would produce 10001001
-because 0 AND 0 is 0, 0 AND 1 is 0, 1 AND 0 is 0, and 1 AND 1 is 1.
-%
-In Avida, however, there is no AND operation nor any other boolean operation
-except for NAND, from which all other boolean operations may be built,
-a property of NAND known as `functional completeness' in boolean algebra.
-%
-For example, P AND Q, where P and Q are input values,
-is equivalent to (P NAND Q) NAND (P NAND Q),
-and P OR Q is equivalent to (P NAND P) NAND (Q NAND Q).
-%
-Because tasks are made up of the same building blocks (NANDs),
-evolved tasks may share the same pieces of code
-and therefore may not be completely independent.
-
-
-
-When an organism performs a task, the organism's `merit' is increased
-by a specific amount, specified in a configuration file, for that task.
-%
-The merit of an organism is a unitless value used by Avida
-to determine the number of instructions an organism may execute each time step.
-%
-If two organisms had the same merit,
-they would execute the same number of instructions at each time step;
-however, if one organism had twice the merit as another,
-the first organism would execute twice the number of instructions
-compared to the second in a single time step.
-%
-Thus, an organism with twice the merit as another,
-would replicate twice as fast.
-%
-Organisms initially inherit the merit of their parents;
-otherwise, new organisms would be at a disadvantage
-compared to the rest of the population.
-%
-The default environment rewards for nine binary (i.e., two-input) tasks,
-but the environment can be configured to reward for an additional 68
-three-input tasks.
-
-
-
-Adaptation in Avida occurs naturally (i.e., it is not simulated),
-as a result of the three ingredients required for natural selection:
-inheritance, variation, and differential reproduction.
-%
-Inheritance comes from replication (sexual or asexual),
-variation comes from mutation and recombination,
-and differential reproduction comes from their rate of replication
-(determined by their replication code and performance of tasks).
-%
-The ability to perform tasks evolves as organisms with the right mutations
-replicate faster than others and therefore take over the population.
-%
-There are many ways in which to perform any one task,
-and independently evolved organisms often evolve the same task
-in different ways and with different degrees of efficiency.
-
-
 
 \subsection{Experimental design}
 
