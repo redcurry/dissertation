@@ -27,44 +27,48 @@
 % - Say that first I'm going to briefly overview how Avida works,
 %   then say that I'm going to summarize my chapters
 
-``Adaptation is the heart and soul of evolution'' (Eldredge 1995).
-% cite: Eldredge, Niles 1995. Reinventing Darwin: the great evolutionary debate. Wiley N.Y. p33
-%
-Adaptation is the process in which traits beneficial to organisms
-in a population are acquired by the population through time.
+\section*{Background}
+\addcontentsline{toc}{section}{Background}
+
+Adaptation is the process in which beneficial traits
+are acquired by organisms in a population through time.
 %
 This process is driven by natural selection.
 %
 Adaptive traits are ultimately encoded in the genetic material of organisms,
-and therefore adaptation can be thought of in terms of adaptive alleles.
+and therefore adaptation is often thought of in terms of adaptive alleles.
 %
-One of the goals of evolutionary research is to identify
-the kind of alleles that lead to adaptation.
+One of the goals of evolutionary research
+is to understand the genetic basis of adaptation.
 %
-For example, are adaptive alleles new mutations or were they present all along?
+For example, do populations introduced to a new environment
+adapt from new mutations or from ``standing genetic variation''
+(i.e., allelic variation present in the population) \citep{orr05}?
+%
+Questions like this require detailed analyses of genetic data,
+such as tracking individual alleles through time \citep{bar08}.
 
 
 
-Although adaptation can explain the complex phenotypes that organisms possess,
-it cannot alone explain the great diversity of life.
+Speciation, the process by which new species form,
+is often a by-product of adaptation \citep{coy04,sch09,sob10}.
 %
-This diversity was brought about through speciation,
-the process by which new species form.
+Populations that evolve independently are likely to adapt in different ways
+and therefore diverge genetically.
 %
-This process is (mostly) a side-effect of adaptation.
-%
-Populations that evolve independently are likely to adapt
-in different ways---for example, they may acquire different alleles.
-%
-These genetic differences are likely to create incompatibilities
-between populations (either before or after mating),
-i.e., reproductive isolation.
+Genetic differences are likely to create ecogeographic, morphological,
+physiological, or genetic isolation between populations \citep{coy04,sch10},
+collectively known as ``reproductive isolation.''
 %
 For example, populations may not recognize each other as potential mates
 or may produce sterile or inviable hybrids.
 %
-Researchers of speciation are highly interested
-in the genetic mechanisms that can lead to reproductive isolation.
+Many speciation researchers are interested
+in the genetic mechanisms that lead to reproductive isolation.
+%
+Like in studies of the genetic basis of adaptation,
+an understanding of the genetic basis of speciation
+requires detailed analyses of genetic data.
 
 
 
@@ -367,5 +371,14 @@ between the accumulations of DMIs versus unfit hybrids.
 %
 Our results highlight the importance
 of complex genetic interactions in speciation.
+
+% Trick to hide bibliography from table of contents
+\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}
+
+\bibliographystyle{apalike}
+\bibliography{intro}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+\addcontentsline{toc}{section}{Literature cited}
 
 \end{doublespace}
