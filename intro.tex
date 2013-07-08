@@ -109,8 +109,8 @@ and artificial genetic systems, which I discuss later,
 can also evolve via selection.
 %
 Natural selection is a universal process that occurs whenever
-three conditions are met:
-(1)~inheritance, (2)~variation, and (3)~differential survival \citep{ada06}.
+three conditions are met: (1)~inheritance, (2)~variation,
+and (3)~differential survival/reproduction \citep{ada06}.
 
 
 
@@ -139,43 +139,84 @@ and biological ones---is the use of artificial life systems \citep{yed01}.
 These are systems in which the conditions for evolution are present,
 and therefore constitute an instance of evolution \citep{pen07}.
 
-% First time anyone has studied specitaion (R.I.) in Avida
 
-% Models & simulations
-% - "digital life can help to refine mathematical theories and aid in
-%   developing and quickly testing new hypotheses about ecological and
-%   evolutionary processes. (Wilke 2002)
-% - "‘I never intended [Tierra] as a model, but that’s the way a lot of people
-%   saw it because they weren’t really prepared for this new idea, this
-%   different perspective of another instance of life’, he says." [Ray] (O'Neil)
 
-% General statements
+In my dissertation, I use the artificial life system Avida \citep{ofr04}
+to study specific genetic mechanisms of adaptation and speciation.
 %
-% - "there could be more to life than we have so far assumed. Alifers are
-%   challenging our common conceptions of life by posing questions whose
-%   answers would be crucial to a comprehensive understanding of the nature of
-%   life, yet ones that biologists themselves typically do not ask." (Swan)
-% - ME: Use biology when you want to understand something fundamentally
-%   biological, but use both when you want to understand general processes
-% - "insights provided by s-Alife research have the potential to fundamentally
-%   alter our understanding of the nature of organic life and thus deserve the
-%   attention of both philosophers and natural scientists. (Swan)
-% - a-life as a "thought experiment" (defined as "allowing us to entertain what
-%   might be, or what could have been, given different parameters") (Swan)
-
-% Benefits of Avida
+Digital populations in Avida meet the conditions required for evolution;
+therefore, Avida represents an instance of evolution.
 %
-% - Complete knowledge of individual organisms, their genotype, fitness,
-%   ancestry; and can track individual alleles
-% - digital "experiments will allow more detailed analyses of complex phenomena
-%   and, in turn, might stimulate increasingly sophisticated evolution
-%   experiments with real organ- isms." (Elena/Lenski 2003)
-% - "‘It’s not just the speed, by any means’, says Lenski. ‘It’s also the power
-%   to manipulate almost any variable one can imagine, to measure variables
-%   with absolute precision, to store information that then allows one to trace
-%   back a complex chain of events, and to take evolved organisms and subject
-%   them to new sorts of analyses that one might not even have anticipated when
-%   first collecting the data’. (O'Neil)
+I discuss how Avida works in more detail in the next section, but briefly,
+digital organisms consist of a sequence of instructions (a `genome')
+that is passed on to offspring during replication (meets inheritance condition).
+%
+Phenotypic and genotypic variation is introduced through mutations
+and, in sexual populations, recombination.
+%
+Organisms with phenotypes that fit their environment
+are able to reproduce faster than others
+(meets differential survival/reproduction condition).
+%
+Avida is unlike a mathematical or computational model
+in that it need not be constrained by parameters and their ranges;
+evolving digital organisms evolve novelty and complexity
+that is impossible to have been predicted \citep{yed01,wil02}.
+%
+Indeed, the patterns observed in Avida runs can be so complex
+as to require traditional models in order to understand them
+(B. \O stman, pers. comm.)
+%
+Avida thus provides an independent system in which predictions
+made from evolutionary theory could be tested \citep{yed01},
+and in turn provide feedback to those theories
+and help refine them \citep{wil02}.
+
+
+Apart from providing open-ended evolution and potentially novel patterns,
+Avida has other advantages due to its computational nature.
+%
+In Avida, we have complete and accurate knowledge of individual organisms,
+their genotype, fitness, and lineage, and we can track individual mutations.
+%
+This power allows one to create experiments of unprecedented sophistication
+that would have been extremely difficult or even impossible
+to carry out in biological organisms \citep{ele03}.
+%
+For example, we are able to go back to any point in time after an experiment,
+change the value of a variable, and re-run the experiment
+in exactly the same way except for the altered variable.
+%
+Another advantage is the capacity to run exact replicates
+of an experimental configuration
+(not counting the initial random `seed,' of course),
+providing high statistical power to data analyses.
+%
+Using Avida, we are able to run experiments for millions of generations
+in a matter of days or weeks.
+
+
+These benefits are not without a cost.
+%
+The most prominent is that one is restricted to the kinds of questions
+for which Avida is suited to \citep{wil02}.
+%
+For example, it would not make sense to study
+the evolution of mitosis (Avida has no true cell division).
+%
+Thus, the questions asked should be amenable to abstraction \citep{wil02}.
+%
+Additionally, one may sometimes `miss the forest for the trees'
+when reporting or interpreting Avida results,
+particularly when the purpose is to study biological phenomena.
+%
+Special care must be taken to ensure that observations
+are not merely artifacts of the computational system
+in order to make the appropriate biological inferences.
+%
+Being a computational system, Avida requires a certain level
+of computer proficiency, especially when performing complex data analyses
+or when custumizations to the system itself are needed.
 
 % Similarity w/ biology
 % - "... `digital organisms' are not nealy as sophisticated as simple bacteria,
@@ -195,35 +236,7 @@ and therefore constitute an instance of evolution \citep{pen07}.
 %   scientific conflict, it would only lead one to ask why and then probe the
 %   relevant factors more deeply’. (O'Neil)
 
-% Limitations of biological methods
-%
-% - "current technology does not allow us to characterize the genotypes of
-%   thousands of cells per generation, still less to determine with certainty
-%   their ancestor-descendant relationships, except in the simplest systems,
-%   such as phages and ribozymes" (Yedid, 2001)
-% - "Population genetics, as currently understood, therefore, cannot chart the
-%   evolution of an open system with indefinite variability." (Yedid, 2001)
-% - "limited to abstract investigations of how information coding is influenced
-%   by different selective pressures and mutational mechanisms" (Adami 2006)
-% - "digital genomes are extremely short compared with even the smallest
-%   free-living organisms and most viruses. Consequently, although the mutation
-%   rate per genome is usually comparable to those of most RNA viruses92, the
-%   rate per gene is unusually high." (Adami 2006)
-
 % Advantage over models/simulations
-% - "It could find a role, therefore, in verifying predictions made by
-%   conventional theory in the context of an independent system of evolvable
-%   self-replicators." (Yedid, 2001)
-% - ME: From Yedid's 2001 manuscript... one of the biggest advantages of
-%   an artificial life system is its open-endedness; models and simulations
-%   of evolution are constrained by parameters and their ranges;
-%   an evolving digital organism creates novelty and complexity
-%   that cannot be forseen by people; it is not uncommon to build models
-%   and simulations in order to understand general patterns in Avida
-%   (pers. comm. Bjorn).
-% - "Thus, even in this simplest of situations, the outcome of evolution can be
-%   any of several genotypes, and it cannot be predicted which will emerge in
-%   any particular realization." (Wilke 2002)
 % - "Unlike other computational approaches to studying evolution (such as
 %   genetic algorithms [1] or numerical simulations) digital organisms must
 %   explicitly create a copy of their own GENOME (see Glossary) to reproduce,
@@ -239,21 +252,45 @@ and therefore constitute an instance of evolution \citep{pen07}.
 %   survive the competition for space, time and resources are the most fit — in
 %   hindsight." (Adami 2006)
 
-% Limitations of Avida
-% - In a way, limitations depend on the question---you have to know which
-%   questions to ask; otherwise, Avida won't help you
-% - "research with digital organisms is restricted to abstract questions about
-%   general principles." (Wilke 2002)
-% - "design choices that enter the construction of the digital world
-%   potentially influence the outcome of experiments, so care must be taken to
-%   study only those questions for which this influence is expected to be
-%   small." (Wilke 2002)
-% - "Traditional theoretical or computational studies have the advantage that
-%   the particular effect under investigation can often be described more
-%   cleanly: Irrelevant details can be neglected in analytical calculations and
-%   in custom-made computer simulations, whereas the dynamics of digital
-%   organisms often become as messy as those of their biochemical counterparts.
-%   (Wilke 2002)
+% First time anyone has studied specitaion (R.I.) in Avida
+
+% Models & simulations
+% - "‘I never intended [Tierra] as a model, but that’s the way a lot of people
+%   saw it because they weren’t really prepared for this new idea, this
+%   different perspective of another instance of life’, he says." [Ray] (O'Neil)
+
+% General statements
+%
+% - "there could be more to life than we have so far assumed. Alifers are
+%   challenging our common conceptions of life by posing questions whose
+%   answers would be crucial to a comprehensive understanding of the nature of
+%   life, yet ones that biologists themselves typically do not ask." (Swan)
+% - ME: Use biology when you want to understand something fundamentally
+%   biological, but use both when you want to understand general processes
+% - "insights provided by s-Alife research have the potential to fundamentally
+%   alter our understanding of the nature of organic life and thus deserve the
+%   attention of both philosophers and natural scientists. (Swan)
+% - a-life as a "thought experiment" (defined as "allowing us to entertain what
+%   might be, or what could have been, given different parameters") (Swan)
+
+
+
+% Limitations of biological methods
+%
+% - "current technology does not allow us to characterize the genotypes of
+%   thousands of cells per generation, still less to determine with certainty
+%   their ancestor-descendant relationships, except in the simplest systems,
+%   such as phages and ribozymes" (Yedid, 2001)
+% - "Population genetics, as currently understood, therefore, cannot chart the
+%   evolution of an open system with indefinite variability." (Yedid, 2001)
+% - "limited to abstract investigations of how information coding is influenced
+%   by different selective pressures and mutational mechanisms" (Adami 2006)
+% - "digital genomes are extremely short compared with even the smallest
+%   free-living organisms and most viruses. Consequently, although the mutation
+%   rate per genome is usually comparable to those of most RNA viruses92, the
+%   rate per gene is unusually high." (Adami 2006)
+
+
 
 % Other applications
 % - Evolution of synchronization/desynchronization important in development
