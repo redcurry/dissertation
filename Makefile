@@ -10,4 +10,4 @@ dissertation.pdf: dissertation.tex acknowledgments.tex intro.tex comp_rate.tex s
 	pdflatex dissertation
 
 clean:
-	rm dissertation.pdf *.aux *.bbl *.log *.toc *.lot *.lof *.blg
+	rm dissertation.pdf dissertation.out *.aux *.bbl *.log *.toc *.lot *.lof *.blg

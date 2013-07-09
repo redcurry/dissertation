@@ -551,13 +551,14 @@ between the accumulations of DMIs versus unfit hybrids.
 Our results highlight the importance
 of complex genetic interactions in speciation.
 
-% Trick to hide bibliography from table of contents
-\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}
+% Temporarily remove section number from bibliography title
+\renewcommand\bibsection{\section*{\bibname}}
 
 \bibliographystyle{apalike}
 \bibliography{intro}
 
-\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+\renewcommand\bibsection{\section{\bibname}}
+
 \addcontentsline{toc}{section}{Literature cited}
 
 \end{doublespace}
