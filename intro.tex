@@ -3,84 +3,8 @@
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
-% Possible order:
-% 1. sgv
-%    - most adaptation happened through sgv
-% 2. rate of compensation
-%    - studied factors affecting compensation vs reversion
-% 3. compensatory speciation
-%    - can compensation lead to incompatibilities?
-% 4. ecol vs MO
-%    - ecol > MO; MO sensitive to gene flow
-% 5. snowball
-%    - quadratic increase in DMIs... maybe linear for hybrid incomp.
-
-% Rough ideas for Introduction:
-% - General: I think I want to emphasize that I'm using Avida
-%   to answer question in adaptation and speciation that are difficult
-%   to track with biological organism, and models are too simplistic.
-% - First paragraph: Talk about genetics of adaptation
-%   and mention that tracking individual mutations is important
-% - Second paragraph: Talk about genetics of speciation
-%   (emphisize on postzygotic) and that it is important
-%   to understand those mutations that cause incompatibilities
-% - Say that first I'm going to briefly overview how Avida works,
-%   then say that I'm going to summarize my chapters
-
 \section*{Background}
 \addcontentsline{toc}{section}{Background}
-
-Adaptation is the process in which beneficial traits
-are acquired by organisms in a population through time.
-%
-This process is driven by natural selection.
-%
-Adaptive traits are ultimately encoded in the genetic material of organisms,
-and therefore adaptation is often thought of in terms of adaptive alleles.
-%
-One of the goals of evolutionary research
-is to understand the genetic basis of adaptation.
-%
-For example, do populations introduced to a new environment
-adapt from new mutations or from ``standing genetic variation''
-(i.e., allelic variation present in the population) \citep{orr05}?
-%
-Questions like this require detailed analyses of genetic data,
-such as tracking individual alleles through time \citep{bar08}.
-
-
-
-Speciation, the process by which new species form,
-is often a by-product of adaptation \citep{coy04,sch09,sob10}.
-%
-Populations that evolve independently are likely to adapt in different ways
-and therefore diverge genetically.
-%
-Genetic differences are likely to create ecogeographic, morphological,
-physiological, or genetic isolation between populations \citep{coy04,sch10},
-collectively known as ``reproductive isolation.''
-%
-For example, populations may not recognize each other as potential mates
-or may produce sterile or inviable hybrids.
-%
-Many speciation researchers are interested
-in the genetic mechanisms that lead to reproductive isolation.
-%
-Like in studies of the genetic basis of adaptation,
-an understanding of the genetic basis of speciation
-requires detailed analyses of genetic data.
-
-
-% Written with Doug in mind, make an argument for Avida;
-% discussion both of the limits of theory and smiualtion
-% as well as the properties of this AL system that lends iteslf
-% to biology -- cool to have a table to compare methods
-%
-% What Avida provides that other systems do not provide
-% (think about how others describe the benefits of their own system).
-
-%Detailed analysis of genetic data is difficult and time consuming.
-%
 
 Richard Feynman once said, ``If our small minds, for some convenience,
 divide this ... universe, into parts---%
@@ -152,9 +76,9 @@ digital organisms consist of a sequence of instructions (a `genome')
 that is passed on to offspring during replication (meets inheritance condition).
 %
 Phenotypic and genotypic variation is introduced through mutations
-and, in sexual populations, recombination.
+and, in sexual populations, through recombination.
 %
-Organisms with phenotypes that fit their environment
+Organisms with phenotypes that match their environment
 are able to reproduce faster than others
 (meets differential survival/reproduction condition).
 %
@@ -162,6 +86,10 @@ Avida is unlike a mathematical or computational model
 in that it need not be constrained by parameters and their ranges;
 evolving digital organisms evolve novelty and complexity
 that is impossible to have been predicted \citep{yed01,wil02}.
+%
+(Note: \citet{yed01} investigated the Terra system,
+from which Avida was based, but I will sometimes cite them
+when discussing Avida if it is appropriate.)
 %
 Indeed, the patterns observed in Avida runs can be so complex
 as to require traditional models in order to understand them
@@ -171,6 +99,7 @@ Avida thus provides an independent system in which predictions
 made from evolutionary theory could be tested \citep{yed01},
 and in turn provide feedback to those theories
 and help refine them \citep{wil02}.
+
 
 
 Apart from providing open-ended evolution and potentially novel patterns,
@@ -196,10 +125,11 @@ Using Avida, we are able to run experiments for millions of generations
 in a matter of days or weeks.
 
 
+
 These benefits are not without a cost.
 %
 The most prominent is that one is restricted to the kinds of questions
-for which Avida is suited to \citep{wil02}.
+to which Avida is best suited \citep{wil02}.
 %
 For example, it would not make sense to study
 the evolution of mitosis (Avida has no true cell division).
@@ -218,114 +148,123 @@ Being a computational system, Avida requires a certain level
 of computer proficiency, especially when performing complex data analyses
 or when custumizations to the system itself are needed.
 
-% Similarity w/ biology
-% - "... `digital organisms' are not nealy as sophisticated as simple bacteria,
-%   or even real viruses." (Twice as natural.)
-% - "The physiology of these programs is different in many respects from that
-%   of organic creatures, but their population biology has many features in
-%   common, including a very extensive, if not unbounded, range of variation."
-%   (Yedid, 2001).
-% - "Although the physiology of Tierran organisms is bizarre, their
-%   evolutionary dynamics seem likely to resemble those of microbes in most
-%   essential respects. (Yedid, 2001)
-% - "digital organisms provide a unique opportunity with which to study
-%   evolutionary biology in a form of life that shares no ancestry with
-%   carbon-based life forms, and hence to distinguish general principles of
-%   evolution from historical accidents" (Wilke, 2002)
-% - "‘But even if the digital and biological realms sometimes come into
-%   scientific conflict, it would only lead one to ask why and then probe the
-%   relevant factors more deeply’. (O'Neil)
 
-% Advantage over models/simulations
-% - "Unlike other computational approaches to studying evolution (such as
-%   genetic algorithms [1] or numerical simulations) digital organisms must
-%   explicitly create a copy of their own GENOME (see Glossary) to reproduce,
-%   and no particular genomic sequence is designated as the target or optimal
-%   sequence. (Wilke 2002)
-% - "By comparing results across wide ranges of parameter settings in the
-%   digital world, as well as with results from biochemical organisms and from
-%   mathematical theories, it is possible to disentangle general principles from
-%   effects that are peculiar to a particular model organism." (Wilke, 2002)
-% - "Darwinian mechanisms is inherently different from a simulation (such as a
-%   genetic algorithm), because the fitness of a program is not determined a
-%   priori by the user. Instead, as for biochemical life, those line- ages that
-%   survive the competition for space, time and resources are the most fit — in
-%   hindsight." (Adami 2006)
 
-% First time anyone has studied specitaion (R.I.) in Avida
-
-% Models & simulations
-% - "‘I never intended [Tierra] as a model, but that’s the way a lot of people
-%   saw it because they weren’t really prepared for this new idea, this
-%   different perspective of another instance of life’, he says." [Ray] (O'Neil)
-
-% General statements
+Physiologically, digital organisms in Avida work very diffirently
+from biological organisms \citep{yed01},
+and they are not as complex as even the simplest lifeforms \citep{len01}.
 %
-% - "there could be more to life than we have so far assumed. Alifers are
-%   challenging our common conceptions of life by posing questions whose
-%   answers would be crucial to a comprehensive understanding of the nature of
-%   life, yet ones that biologists themselves typically do not ask." (Swan)
-% - ME: Use biology when you want to understand something fundamentally
-%   biological, but use both when you want to understand general processes
-% - "insights provided by s-Alife research have the potential to fundamentally
-%   alter our understanding of the nature of organic life and thus deserve the
-%   attention of both philosophers and natural scientists. (Swan)
-% - a-life as a "thought experiment" (defined as "allowing us to entertain what
-%   might be, or what could have been, given different parameters") (Swan)
-
-
-
-% Limitations of biological methods
+However, several evolutionary properties have been found
+to be remarkably similar to that of biological organisms
+\citep{yed01,wil02,ada06}
+(e.g., the distribution of mutational effects, the types of epistasis,
+and the genetic architecture of sexual organisms).
 %
-% - "current technology does not allow us to characterize the genotypes of
-%   thousands of cells per generation, still less to determine with certainty
-%   their ancestor-descendant relationships, except in the simplest systems,
-%   such as phages and ribozymes" (Yedid, 2001)
-% - "Population genetics, as currently understood, therefore, cannot chart the
-%   evolution of an open system with indefinite variability." (Yedid, 2001)
-% - "limited to abstract investigations of how information coding is influenced
-%   by different selective pressures and mutational mechanisms" (Adami 2006)
-% - "digital genomes are extremely short compared with even the smallest
-%   free-living organisms and most viruses. Consequently, although the mutation
-%   rate per genome is usually comparable to those of most RNA viruses92, the
-%   rate per gene is unusually high." (Adami 2006)
+But as R. Lenski points out in \citet{one03},
+``even if the digital and biological realms sometimes come
+into scientific conflict, it would only lead one to ask why
+and then probe the relevant factors more deeply.''
+%
+Therefore, Avida provides an additional avenue of inquiry
+where experiments can be conducted, and the results compared
+to those of model organisms and theory,
+in order to discover the generality of some phenomenon \citep{wil02}.
 
 
 
-% Other applications
-% - Evolution of synchronization/desynchronization important in development
-%   of communication protocols \citep{kno11}
-% - cooperative information gathering (Beckmann 2007)
-% - "Eventually, such robots, and the software that directs them, might evolve
-%   without human interaction, at which point they would become part of the
-%   ecosystem in which we live." (Wilke 2002)
-% - "The alternative of evolving programs looked like a great idea to
-%   Microsoft," [robust programs; also MS intersted in evolvable
-%   programming languages] (O'Neil)
-% - "says Lenski, but ‘biological principles, from evolution and genetics to
-%   neurobiology and ecology, are informing computer scientists and engineers
-%   in designing software and hardware ... and that holds tremendous promise
-%   for the future’.(O'Neil)
-% - "Evolutionary computation, a subfield of computer science, applies the
-%   basic principles of genetic evolution to problem solving." (McKinley 2008)
-% - digital evolution pro- vides an open-ended search technique for problems in
-%   science and engineering. (McKinley 2008)
-% - "Sys- tems must adapt to their environment, compensate for failures,
-%   optimize performance, and protect themselves from attacks—all with minimal
-%   human intervention" (McKinley 2008)
-% - Applications to software design, new algorithms, cooperative communication
-%   algorithms, minimizing energy consumption of mobile devices (McKinley 2008)
-% - software resilience to varying conditions (Goldsby 2008)
-% - robust distribution of data in a network (Knoester 2009)
+In addition to all the benefits that Avida offers to biologists,
+Avida is also of interest to engineers.
+%
+Other evolutionary computational tools, such as genetic algorithms,
+have been used by engineers to tackle difficult problems
+that are best solved by evolution rather than by design \citep{mck08}.
+%
+As in applications to biological questions,
+Avida offers a more open-ended approach to optimization and
+algorithms for solving engineering problems \citep{mck08}.
+%
+Evolutionary concepts, such as robustness, evolvability, and cooperation,
+are very interesting to system and software engineers,
+who would like to develop systems that can compensate for failures,
+be resilient to varying parameters, protect themselves from attacks,
+gather information cooperatively,
+and be efficient at distributing data through a network
+\citep{bec07,mck08,gol08,kno09,kno11}.
+%
+\citet{wil02} posit that ``robots, and the software that directs them,
+might evolve without human interaction, at which point they would become
+part of the ecosystem in which we live.''
+%
+Using Avida, biologists themselves can therefore contribute to solving problems
+outside their field, broadening their impact of their research \citep{one03}.
 
-%A detailed study of adaptation and speciation
-%requires identifying individual alleles
-%and tracking them through time, which is no easy task.
-%%
-%Computational and mathematical models of adaptation
-%have been developed to study this process theoretically.
-%%
-%Models, however, miss some of the complexities of real, evolving organisms.
+
+
+In this dissertation, I use Avida to investigate
+some genetic mechanisms of adaptation and speciation.
+%
+Adaptation is the process in which beneficial traits
+are acquired by organisms in a population through time.
+%
+Adaptive traits driven to fixation by natural selection
+are ultimately encoded in the genetic material of organisms,
+and therefore adaptation is often thought of in terms of adaptive alleles.
+%
+One of the goals of research in evolutionary biology
+is to understand the genetic basis of adaptation.
+%
+For example, does the raw material for adaptive evolution
+come from from new mutations or from ``standing genetic variation''
+(i.e., allelic variation present in the population) \citep{orr05}?
+%
+Questions like this require detailed analyses of genetic data,
+such as tracking individual alleles through time \citep{bar08}.
+
+
+
+Speciation, the process by which new species form,
+is often a by-product of adaptation \citep{coy04,sch09,sob10}.
+%
+Populations that evolve independently are likely to adapt in different ways
+and therefore diverge genetically.
+%
+Genetic differences are likely to create ecogeographic, morphological,
+physiological, or genetic isolation between populations \citep{coy04,sch10},
+collectively known as ``reproductive isolation.''
+%
+For example, populations may not recognize each other as potential mates
+or may produce sterile or inviable hybrids.
+%
+A topic of much recent consideration
+is the genetic mechanisms that lead to reproductive isolation.
+%
+Like in studies of the genetic basis of adaptation,
+an understanding of the genetic basis of speciation
+requires detailed analyses of genetic data over time.
+
+
+
+The topic of speciation, as commonly defined as reproductive isolation,
+has never before been studied in Avida.
+%
+This was because sexual reproduction in Avida has only recently
+been implemented, orginially to study the evolution of sex
+\citep{mis04,mis06,mis10}.
+%
+Sexual reproduction in Avida was implemented by exchanging genetic material
+between the next two organisms that are ready to reproduce.
+%
+Currently, there is no mate recognition in Avida
+(alhough research in this topic has been done),
+and therefore prezygotic isolation is not easy to study.
+%
+My research on speciation has thus focused on postzygotic isolation,
+i.e., hybrid sterility or inviability,
+as creating hybrids between organisms and measuring their fitness is simple.
+%
+My research has demonstrated that Avida is a useful tool to complement
+other approaches in speciation research as it allows for
+the direct observation of evolution and reproductive isolation in action.
 
 
 
