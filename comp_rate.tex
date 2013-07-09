@@ -74,7 +74,7 @@ One might expect, however, that once the revertant mutation appears
 it would most likely fix because its fitness recovery is 100\%
 (i.e., its selective value would be higher than that of compensation).
 %
-However, we know that epistasis is common in organisms, and the possibility
+However, I know that epistasis is common in organisms, and the possibility
 exists that once a few compensatory mutations arise and fix,
 the revertant mutation will not provide its full benefits because
 it would interact negatively with compensatory mutations.
@@ -85,7 +85,7 @@ The conflict between compensatory and reversion is a complicated
 interaction involving, at least, the initial fitness of the mutant,
 population size, and mutation rate.
 %
-Here we examine the effect of these factors one by one
+Here I examine the effect of these factors one by one
 on the probability of compensation vs. reversion.
 
 
@@ -114,7 +114,7 @@ and thus cancel out its benefit.
 
 
 
-In this study, we used experimental evolution \emph{in silico}
+In this study, I used experimental evolution \emph{in silico}
 using the artificial life system Avida \cite{ofr04} (see p. \pageref{sec:avida})
 to examine the evolutionary dynamics of compensatory adaptation.
 %
@@ -122,12 +122,12 @@ The use of digital organisms allowed us to answer questions
 that would be difficult even with microbial organisms.
 %
 With digital organisms,
-we can observe hundreds of generations in a few minutes,
+one can observe hundreds of generations in a few minutes,
 conduct hundreds of replicate experiments,
 easily manipulate genomes,
 and accurately measure fitness.
 %
-Although the system we used is artificial, it has been shown that
+Although the system I used is artificial, it has been shown that
 several biological phenomena emerge naturally in Avida \cite{wil02,ada06}.
 %
 Digital organisms improve on mathematical models of adaptation
@@ -140,21 +140,21 @@ In our experiments, populations of mutants
 with a single deleterious mutation
 were allowed to evolve for $\sim$~850 generations.
 %
-We first estimated the availability of compensatory mutations
+I first estimated the availability of compensatory mutations
 depending on the initial fitness of the mutant.
 %
-Then, we examined the effect of three variables---%
+Then, I examined the effect of three variables---%
 the initial fitness of the mutant, the population size,
 and the mutation rate---%
 on the probability of compensation vs. reversion.
 %
-From these experiments, we hope to learn the conditions under which
+From these experiments, I hope to learn the conditions under which
 compensation or reversion are likely to occur.
 %
 It is unclear how reversion and compensation interact in a natural environment,
 whether compensatory mutations could prevent the effect of reversion.
 %
-We also do not know whether the effect of compensatory mutations
+I also do not know whether the effect of compensatory mutations
 as well as their quantity could overpower reversion given that
 such compensatory mutations would arise much more frequently.
 
@@ -162,7 +162,7 @@ such compensatory mutations would arise much more frequently.
 
 \section{Results}
 
-We evolved two ancestral populations of digital organisms (see Methods),
+I evolved two ancestral populations of digital organisms (see Methods),
 each composed of 10,000 individuals,
 to the default environment for 500,000 updates ($\sim$~40,000 generations).
 %
@@ -172,7 +172,7 @@ per genome per generation.
 %
 Both ancestral populations had evolved long enough to fully adapt
 and population fitness had stabilized for thousands of generations;
-therefore, we consider each of these populations
+therefore, I consider each of these populations
 to be near their respective optimal fitness for this environment.
 %
 Although at the phenotypic level both populations
@@ -184,7 +184,7 @@ The consensus sequence of these two ancestors served
 as the ancestral genotypes for subsequent experiments.
 %
 For each of these ancestral genotypes,
-we identified five sets of two mutants,
+I identified five sets of two mutants,
 each pair with approximately a fitness of either
 0.1, 0.3, 0.5, 0.7, and 0.9 relative to the ancestor,
 for a total of 20 mutant genotypes.
@@ -193,8 +193,8 @@ for a total of 20 mutant genotypes.
 
 \subsection{Frequency of compensatory mutations}
 
-Before we started the experimental evolution of mutants,
-we confirmed in digital organisms theoretical and empirical expectations
+Before I started the experimental evolution of mutants,
+I confirmed in digital organisms theoretical and empirical expectations
 about the availability of compensatory mutations in other organisms:
 there should be more compensatory mutations the lower the initial fitness
 (i.e., there are more ways to compensate the lower your fitness).
@@ -209,11 +209,11 @@ Empirical studies (e.g., \cite{ele98,bur99}) have also shown
 that populations with deleterious mutations readily gain
 more beneficial mutations than fit populations \cite{whi00}.
 %
-To test this hypothesis, we introduced every possible single mutation
+To test this hypothesis, I introduced every possible single mutation
 on each mutant and counted the number that were fully or partially compensatory
 (i.e., fitness increased in the presence of the deleterious mutation).
 %
-We confirmed that in digital organisms, as in biological,
+I confirmed that in digital organisms, as in biological,
 there were more compensatory mutations available in the mutants
 with low fitness than in those with high fitness (Figure~\ref{fig:comp_avail}).
 %
@@ -249,7 +249,7 @@ corroborating suggestions that compensation is more likely than reversion
 \subsection{Effect of initial fitness of mutant}
 
 % Perhaps have suppl. figures showing fitness increase
-We evolved these 20 mutant genotypes independently
+I evolved these 20 mutant genotypes independently
 for 10,000 updates ($\sim$~850 generations)
 under the same environment as the original ancestors.
 %
@@ -257,7 +257,7 @@ For each genotype, the starting population
 was composed of 1,000 genetically-identical individuals,
 and the experimental evolution for each genotype was replicated 100 times.
 %
-We found that the probability of compensatory adaptation
+I found that the probability of compensatory adaptation
 declined with the fitness of the initial mutant
 (Figures \ref{fig:W_comp}A and \ref{fig:W_comp}B).
 %
@@ -337,21 +337,21 @@ the stronger that negative epistasis is with other mutations.
 %
 To test whether negative epistasis may have contributed in
 preventing reversions from spreading in the evolving populations,
-we calculated the number of generations in which a reversion
+I calculated the number of generations in which a reversion
 stopped being beneficial in populations that did not eventually revert.
 %
-First, we reverted the initial mutation to the ancestral state
+First, I reverted the initial mutation to the ancestral state
 for every individual in the population at each update saved
 (every 100 updates or $\sim$~8.5 generations).
 %
-We then calculated the mean fitness of this population
+I then calculated the mean fitness of this population
 relative to the mean fitness of the original population.
 %
 Finally, starting at the first update and continuing sequentially,
-we tested whether the mean relative fitness of the reverted population
+I tested whether the mean relative fitness of the reverted population
 was less than 1.001; if so, reversion was no longer beneficial at this update.
 %
-We found that reversion stopped being beneficial sooner
+I found that reversion stopped being beneficial sooner
 at large-effect initial mutations than at small-effect initial mutations
 (Figure~\ref{fig:first-update-rev-bad-W}),
 indicating that negative epistasis was strongest for large-effect mutations.
@@ -378,7 +378,7 @@ indicating that negative epistasis was strongest for large-effect mutations.
 
 
 
-As we noted before, however, the overall amount of negative epistasis
+As I noted before, however, the overall amount of negative epistasis
 is proportional to the number of mutations accumulated.
 %
 Because populations that start with lower fitness adapt faster
@@ -393,15 +393,15 @@ among treatments (i.e., initial fitness of mutant).
 To determine whether the amount of negative epistasis
 is different among treatments by accounting for the different
 speeds at which compensation occurs,
-we determined the number of mutations accumulated per treatment
+I determined the number of mutations accumulated per treatment
 at which reversion stopped being beneficial.
 %
 By examining the number of mutations accumulated
 rather than the number of generations that have elapsed,
-we controlled for the varying number of mutations
+I controlled for the varying number of mutations
 that accumulated through time for each treatment.
 %
-We still found that reversion stopped being beneficial sooner
+I still found that reversion stopped being beneficial sooner
 for large-effect initial mutations than for small-effect initial mutations
 (Figure~\ref{fig:first-mut-rev-bad-W}),
 indicating that negative epistasis was strongest for large-effect mutations.
@@ -432,21 +432,21 @@ indicating that negative epistasis was strongest for large-effect mutations.
 
 To further show that negative epistasis contributed
 to shortening the window of opportunity for reversion,
-we estimated the time at which a reversion must appear
+I estimated the time at which a reversion must appear
 in order to eventually reach fixation
 with and without negative epistasis (see Methods).
 %
 These estimates were calculated using Markov chain simulations
 and the known probability of reversion and selective coefficient through time.
 %
-We then compared these results with runs in which reversion did occur.
+I then compared these results with runs in which reversion did occur.
 %
 If the estimates calculated in the presence of negative epistasis
 match the actual runs better than the estimates calculated without epistasis,
-then we can be sure that negative epistasis
+then I can be sure that negative epistasis
 was an important contributor to slowing down the rate of reversion.
 %
-Indeed, we found that the actual runs matched the estimates
+Indeed, I found that the actual runs matched the estimates
 that were calculated in the presence of negative epistasis
 (Figure~\ref{fig:expected-rev}).
 %
@@ -455,7 +455,7 @@ and still reach fixation because its selective benefit lasts longer.
 %
 With epistasis, however, the window opportunity was small,
 so a reversion must appear early on if it will fix,
-which was exactly what we observed in the actual runs that reverted.
+which was exactly what I observed in the actual runs that reverted.
 
 
 
@@ -477,14 +477,14 @@ which was exactly what we observed in the actual runs that reverted.
 
 
 
-We have learned that the probability of compensation and reversion
+I have learned that the probability of compensation and reversion
 depends on the probability of finding these different kinds of mutations.
 %
-We should therefore expect that the population size,
+I should therefore expect that the population size,
 which increases the total number of mutants available,
 should play an important role in the probability of compensation.
 %
-We know that reversion is more likely to occur if it appears early
+I know that reversion is more likely to occur if it appears early
 because compensatory mutations have not had an opportunity
 to decrease the fitness effect of reversion
 and because they have not incurred negative epistasis with reversion.
@@ -492,14 +492,14 @@ and because they have not incurred negative epistasis with reversion.
 In large populations, the opportunity for a reversion to appear early
 is higher, thus larger populations should revert more often.
 %
-We next examine the effect of population size on the probability
+I next examine the effect of population size on the probability
 of compensation and reversion.
 
 
 
 \subsection{Effect of population size}
 
-We evolved the four mutants with relative fitness of 0.5
+I evolved the four mutants with relative fitness of 0.5
 under four population sizes each: 10, 100, 1,000, and 10,000.
 %
 Each of these 16 experiments was replicated 100 times,
@@ -508,7 +508,7 @@ and evolved for 10,000 updates ($\sim$~850 generations).
 %
 The mutation rate was set to 0.1 mutations per generation for each experiment.
 %
-We found that the probability of compensatory adaptation
+I found that the probability of compensatory adaptation
 was highest at population sizes of 100 and 1,000
 but lowest at the extremes of 10 and 10,000
 (Figures \ref{fig:N_comp}A and \ref{fig:N_comp}B).
@@ -559,7 +559,7 @@ However, this did not explain the reason that the probability of compensation
 at population size of 10 was lower than that at 100 or 1,000
 because reversion at population size of 10 was very unlikely.
 %
-We observed that at population size 10
+I observed that at population size 10
 many populations decreased in fitness or did not change in fitness.
 %
 The number of populations that decreased in fitness
@@ -578,7 +578,7 @@ were accumulating deleterious mutations due to the small population size.
 
 \subsection{Effect of mutation rate}
 
-We evolved the four mutants with relative fitness of 0.5
+I evolved the four mutants with relative fitness of 0.5
 under five mutation rates each: 0.0001, 0.001, 0.01, 0.1, and 1.0
 (mutations per genome per generation).
 %
@@ -588,9 +588,9 @@ and evolved for 10,000 updates ($\sim$~850 generations).
 %
 The population size was kept at 1,000 throughout each experiment.
 %
-We found that when the mutation rate was >~0.0001,
+I found that when the mutation rate was >~0.0001,
 the probability of compensatory adaptation
-was high across the mutation rates we tested
+was high across the mutation rates I tested
 (Figures~\ref{fig:U_comp}A and \ref{fig:U_comp}B),
 except for the second mutant based on the first ancestor
 (Figure~\ref{fig:U_comp}A, triangle at mutation rate 0.001),
@@ -640,7 +640,7 @@ the total number of mutations that arose was the same
 as those in which the population size was 10,000
 (10,000~individuals~$\times$~0.1~= 1,000~= 1,000~individuals~$\times$~1.0).
 %
-However, we found that reversion was less likely at a mutation rate of 1.0
+However, I found that reversion was less likely at a mutation rate of 1.0
 (compare Figure \ref{fig:N_comp}C at population size 10,000
 with Figure \ref{fig:U_comp}E at mutation rate 1.0).
 %
@@ -649,14 +649,14 @@ in which all types of mutations have a greater chance of arising,
 the revertant mutation often arises on organisms with other mutations,
 therefore introducing the possibility of negative epistasis.
 %
-To test this, we performed a similar analysis as in the initial mutation
-fitness, where we calculated the number of generations in which a reversion
+To test this, I performed a similar analysis as in the initial mutation
+fitness, where I calculated the number of generations in which a reversion
 stopped being beneficial in populations that did not eventually revert.
 %
 The expectation is that the sooner reversions stop being beneficial
 the stronger that negative epistasis is with other mutations.
 %
-We found that reversion stopped being beneficial sooner
+I found that reversion stopped being beneficial sooner
 at higher mutation rate than at lower mutation rate
 (Figure~\ref{fig:first-update-rev-bad-U}),
 indicating that negative epistasis was strongest at higher mutation rate.
@@ -700,13 +700,13 @@ of compensatory mutation exceeds that of reversion by at least a factor of 10''
 and 2/8 experiments reverted using a higher bottleneck but 0/12 experiments
 reverted using a smaller bottleneck.
 %
-In our populations, we there is no serial passage (like a chemostat), so we do
+In our populations, there is no serial passage (like a chemostat), so I do
 not have the problem of bottlenecks, although populations are limited in size.
 %
-Yet we see a lot of compensation, meaning that bottleneck
+Yet I see a lot of compensation, meaning that bottleneck
 reason is not as important as other factors.
 %
-Instead, we found that negative epistasis between compensatory mutations
+Instead, I found that negative epistasis between compensatory mutations
 and a revertant (i.e., absence of the deleterious mutation)
 prevented the revertant from spreading in a population.
 
@@ -729,7 +729,7 @@ but lacked the evidence to support it,
 was that there may be more compensatory mutations available
 in low-fitness mutants than in high-fitness mutants.
 %
-In fact, this was exactly what we found
+In fact, this was exactly what I found
 in our digital mutants (Figure~\ref{fig:comp_avail}).
 %
 Our results support Whitlock \emph{et al.} \cite{whi03},
@@ -747,7 +747,7 @@ mutational target for compensatory interactions.''
 This must be going on in our populations because the more severe
 the deleterious mutation, the more tasks that are being knocked out.
 %
-We did not find, as Sanju\'an \emph{et al}. \cite{san05} found,
+I did not find, as Sanju\'an \emph{et al}. \cite{san05} found,
 that low-fitness mutants improved in fitness more than high-fit mutants
 (Figures~\ref{fig:W_comp}E and \ref{fig:W_comp}F).
 
@@ -777,10 +777,10 @@ The second reason may be due to the fact that large-effect
 compensatory mutations, which are more likely to fix in low-fitness mutants
 cause large-effect negative epistasis.
 %
-We clearly see the latter reason going on: large-effect compensatory mutations
+I clearly see the latter reason going on: large-effect compensatory mutations
 have stronger negative epistasis with the revertant mutation.
 %
-We cannot, however, exclude the former, and it is likely going on as well.
+I cannot, however, exclude the former, and it is likely going on as well.
 %
 The importance of all this is that as compensatory adaptation proceeds,
 it becomes increasingly harder for reversion to occur,
@@ -822,7 +822,7 @@ that may have caused revertants to appear more frequently.
 %
 Both Burch and Chao \cite{bur99} and Maisnier-Patin \emph{et al}. \cite{mai02}
 found that fitness was highest when the population size was highest,
-as we did (Figures~\ref{fig:N_comp}E and \ref{fig:N_comp}F).
+as I did (Figures~\ref{fig:N_comp}E and \ref{fig:N_comp}F).
 %
 However, Estes and Lynch \cite{est03} argued that no reversion occurred in their
 study at their population size of about 10,000, possibly because their mutation
@@ -836,7 +836,7 @@ the mutational meltdown could have occurred in small populations.
 But there is a limit in population size in which even compensatory adaptation
 cannot save because of the overwhelming effects of drift \cite{poo05}.
 %
-We found that at population size of 10, many populations decreased in fitness
+I found that at population size of 10, many populations decreased in fitness
 as they accumulated deleterious mutations.
 %
 Even severely deleterious populations can be compensated, and do so quickly,
@@ -857,7 +857,7 @@ Our results corroborate this trend, except at very high mutation rates,
 where the probability of reversion increased and thus compensation decreased
 (Figure~\ref{fig:U_comp}).
 %
-However, we found that the rate of reversion was not as high as expected
+However, I found that the rate of reversion was not as high as expected
 (based on our treatments with population size)
 because the window of opportunity for reversion to be be beneficial
 was very small at high mutation rates (Figure~\ref{fig:first-update-rev-bad-U}).
@@ -910,22 +910,22 @@ but very small populations are likely to decline in fitness.
 \subsection{Evolution of ancestors}
 
 Starting with a digital organism with a genome length of 200,
-we derived 20 asexual and 20 sexual ancestral populations.
+I derived 20 asexual and 20 sexual ancestral populations.
 %
 This initial organism could reproduce but could not perform any tasks.
 %
-We set the grid (or `world') size to 10,000 individuals
+I set the grid (or `world') size to 10,000 individuals
 and the point mutation rate to 0.1 per genome per generation.
 %
 Populations were evolved in the default nine-task environment,
 re-configured to add the bonus for each task performed,
 rather than multiply its power of two.
 %
-We allowed 20 replicate asexual populations
+I allowed 20 replicate asexual populations
 and 20 replicate sexual populations
 to evolve for 500,000 updates ($\sim$~40,000 generations).
 %
-We then chose two asexual and two sexual populations
+I then chose two asexual and two sexual populations
 whose consensus sequence could perform all nine tasks.
 %
 The consensus sequences of these four populations
@@ -934,29 +934,29 @@ served as the ancestral genotypes from which mutants were derived.
 
 \subsection{Construction and evolution of mutants}
 
-From each ancestor, we generated every possible single mutant (5,000)
+From each ancestor, I generated every possible single mutant (5,000)
 and, for the asexual ancestors, chose five pairs of mutants,
 each pair with the following relative fitnesses:
 0.1, 0.3, 0.5, 0.7, and 0.9 ($\pm$~0.025).
 %
-For the sexual ancestors, we chose two mutants
+For the sexual ancestors, I chose two mutants
 with relative fitnesses of 0.5 ($\pm$~0.025).
 %
-We ensured that the only allele at the mutant locus
+I ensured that the only allele at the mutant locus
 that could fully recover fitness was the ancestral, revertant, allele.
 %
-If we could not find mutants with the above conditions for any ancestor,
-we chose another ancestral genotype that could perform all nine tasks
+If I could not find mutants with the above conditions for any ancestor,
+I chose another ancestral genotype that could perform all nine tasks
 and repeated the method for generating mutants.
 %
-In total, we obtained 24 mutants: 10 for each of the two asexual ancestors
+In total, I obtained 24 mutants: 10 for each of the two asexual ancestors
 and two for each of the sexual ancestors.
 
 
 \subsection{Detection of compensatory adaptation}
 
 To determine whether a population compensated or recovered,
-we looked at the consensus sequences at the end of 10,000 updates
+I looked at the consensus sequences at the end of 10,000 updates
 ($\sim$~850 generations).
 %
 If the fitness of the consensus sequence reached 99\% of the
@@ -964,7 +964,7 @@ ancestral sequence and the allele at the mutant position
 changed (to either the ancestral or to something else),
 then the population was said to have reverted.
 %
-The reason we also considered non-ancestral alleles as reversions
+The reason I also considered non-ancestral alleles as reversions
 is that substitutions at the mutant locus could represent
 neutral alleles in the original ancestor;
 this ``effective reversion'' is common in some viruses \cite{arg07}.
@@ -974,7 +974,7 @@ mutant sequence and the allele was not the ancestral allele,
 then the population was said to have compensated
 (so both full and partial compensation were clumped together).
 %
-We included substitutions as compensations when the recovery
+I included substitutions as compensations when the recovery
 was partial for similar reasons as above: the mutant allele
 likely has neutral mutations that are effectively equivalent.
 
@@ -982,15 +982,15 @@ likely has neutral mutations that are effectively equivalent.
 
 \subsection{Estimation of the expected time for reversion}
 
-We estimated the expected time (in updates) at which a new reversion
+I estimated the expected time (in updates) at which a new reversion
 destined to fixation appeared.
 %
-To do this, we went through each update $t =$ 100, 200, \ldots, 10,000
+To do this, I went through each update $t =$ 100, 200, \ldots, 10,000
 (our data's resolution) and stopped at update $t$ with probability $p(t)$,
 the probability that a new reversion appears between updates $t - 100$ and $t$
 and is destined to fixation.
 %
-We calculated $p(t)$ as $A_{100} f(s(t))(1 - p(t - 100))$, where $A_{100}$
+I calculated $p(t)$ as $A_{100} f(s(t))(1 - p(t - 100))$, where $A_{100}$
 is the probability that a reversion appears within 100 updates,
 and $f(s(t))$ is the probability that a new reversion with
 selection coefficient $s(t)$ is destined to fixation (methods explained below).
@@ -1003,7 +1003,7 @@ in the treatment testing the effect of the initial fitness
 (except for replicates that actually reverted because that would
 interfere with calculating a reversion's selection coefficient).
 %
-We estimated the expected time for two different cases:
+I estimated the expected time for two different cases:
 (1) the revertant's relative fitness is always 1.0 (i.e., without epistasis)
 and (2) the revertant's relative fitness depends on the genetic background
 on which it appears (i.e., with epistasis).
@@ -1015,25 +1015,25 @@ within 100 updates will be the same,
 but the probability of fixation $f(s(t))$ will be different because
 $s(t)$ depends on whether there is epistasis.
 %
-To estimate $A_{100}$, we ran 100 Avida experiments where the configuration was
+To estimate $A_{100}$, I ran 100 Avida experiments where the configuration was
 identical to the default experiment (except that the initial population
 consisted of organisms that could not perform any tasks).
 % Will readers know what the "default" experiment is?
 %
 During the experiments, every time a specific mutation appeared
 (e.g., the position and allele of a reversion for one of our treatments),
-we recorded the update at which this happened.
+I recorded the update at which this happened.
 %
 (Because the mutation rate was the same for all runs in the treatment
 that tested the initial fitness, the choice of revertant to record
 does not matter because the probability that any specific mutation appears
 is the same for all mutations.)
 %
-We then binned each recorded update into bins of size 100,
+I then binned each recorded update into bins of size 100,
 counted the number in each bin, and divided that number by 100
 (because there were 100 replicate runs).
 %
-We found that the mean of $A_{100}$ was 0.1915
+I found that the mean of $A_{100}$ was 0.1915
 with a standard deviation of 0.0443.
 
 
@@ -1042,46 +1042,46 @@ As mentioned before, the probability of fixation $f(s(t))$
 depends on whether there is epistasis because $s(t)$ depends on this.
 %
 However, given a specific value of $s(t)$, call it $s$,
-we can estimate its fixation probability.
+I can estimate its fixation probability.
 %
-To do this, we created every possible mutant of the first ancestor
+To do this, I created every possible mutant of the first ancestor
 and calculated their fitness, which gave us various values of $s$
 for a revertant (calculated as $1 - w(m) / w(a)$,
 where $w(m) / w(a)$ is the relative fitness of the mutant).
 %
-We discarded any mutants with either zero fitness
+I discarded any mutants with either zero fitness
 or a fitness greater than the ancestor's,
 as these would result in an $s$ value less than or equal to 0
 (not a beneficial reversion).
 %
-Then, for each unique value of $s$, we populated a new Avida world of 1,000
+Then, for each unique value of $s$, I populated a new Avida world of 1,000
 identical mutants and a single revertant (i.e., the ancestor).
 %
 (Because several different mutants sometimes had the same $s$,
-we picked the first such mutant in the above configuration.)
+I picked the first such mutant in the above configuration.)
 %
-We let each population run in replicates of 100 for 10,000 updates
+I let each population run in replicates of 100 for 10,000 updates
 ($\sim$~850 generations) and zero mutation rate.
 %
 After removing one outlier, which had 1.0 fixation probability,
-we fit two line segments to the data such that together they minimized
+I fit two line segments to the data such that together they minimized
 the sum of the squared residuals (the first line was anchored
 at 0.001 fixation probability for $s$ of 0).
 %
-We found that when $s < 0.28$, $f(s) = 1.813s$
+I found that when $s < 0.28$, $f(s) = 1.813s$
 (with residual standard deviation 0.09584) and when $s \ge 0.28$,
 $f(s) = 0.2414s + 0.4382$ (with residual standard deviation of 0.0643).
 
 
 
-We estimated the revertant's selection coefficient $s(t)$
+I estimated the revertant's selection coefficient $s(t)$
 as $\overline{w}_{R}(t) - \overline{w}(t)$,
 where $\overline{w}_{R}(t)$ is the revertant's mean relative fitness
 and $\overline{w}(t)$ is the population's mean relative fitness
 between updates $t$ and $t - 100$.
 %
-Because we recorded data at updates 0, 100, 200, \ldots, 10,000,
-we estimated $\overline{w}_{R}(t)$ and $\overline{w}(t)$
+Because I recorded data at updates 0, 100, 200, \ldots, 10,000,
+I estimated $\overline{w}_{R}(t)$ and $\overline{w}(t)$
 as the mean value between those at $t$ and $t - 100$.
 %
 In the case where there is no epistasis, $\overline{w}_{R}(t)$ was always 1.0.

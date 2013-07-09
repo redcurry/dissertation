@@ -129,7 +129,7 @@ their quadratic fit to the data was not statistically powerful.
 
 To provide an example of what is required to identify a DMI,
 suppose that allele $D$ in Fig.~\ref{dm-model} has just fixed
-in one population, and we want to test whether it is incompatible
+in one population, and I want to test whether it is incompatible
 with allele $C$ in the other population.
 %
 One option is to isolate these alleles in the ancestral genetic background
@@ -151,30 +151,30 @@ In the example above, this means that one must first verify that genotypes
 \emph{abCde} and \emph{abcDe} had normal fitness before testing \emph{abCDe}.
 
 
-%- here's what we did
-%- here's what we used to do it
-%- here's why we used it
+%- here's what I did
+%- here's what I used to do it
+%- here's why I used it
 %  - accurately count...
-%- here's what we got
+%- here's what I got
 
 
-In this study, we conducted experimental evolution
+In this study, I conducted experimental evolution
 to test whether pairwise DMIs increased quadratically through time
 between evolving populations of digital organisms.
 %
-We also measured hybrid inviability through time
+I also measured hybrid inviability through time
 in order to determine whether there was a missing snowball.
 %
-Finally, we determined the ratio of derived-derived and derived-ancestral DMIs
+Finally, I determined the ratio of derived-derived and derived-ancestral DMIs
 and the probability than a pairwise interaction forms a DMI,
 which in the literature has been assumed to be constant.
 %
-We used Avida~\citep{ofr04} (see p. \pageref{sec:avida},
+I used Avida~\citep{ofr04} (see p. \pageref{sec:avida},
 an artificial life research platform,
 to conduct our experiments with digital organisms.
 %
-We used digital organisms for several reasons:
-we can observe thousands of generations in minutes,
+I used digital organisms for several reasons:
+I can observe thousands of generations in minutes,
 easily manipulate genomes, which allowed us to
 develop a method to accurately count the number of individual pairwise DMIs
 as they arose,
@@ -194,13 +194,13 @@ and have an accurate historical record.
 
 \section{Results}
 
-To generate the ancestral genotype, we first founded a population
+To generate the ancestral genotype, I first founded a population
 with an organism that could replicate sexually but could not perform any tasks.
 %
-We then let this population evolve for about 1.5 million generations,
-and we took the genotype of the most common organism as the ancestral genotype.
+I then let this population evolve for about 1.5 million generations,
+and I took the genotype of the most common organism as the ancestral genotype.
 %
-Using this ancestor, we then founded 40 independent populations
+Using this ancestor, I then founded 40 independent populations
 and allowed them to evolve independently for about 10,000 generations.
 %
 The configuration parameters, including the environmental conditions,
@@ -221,7 +221,7 @@ The mean relative fitness of hybrids between pairs of populations
 at the end of the runs was 0.91 (range: 0.68--0.97) (Fig.~\ref{avida}D),
 indicating that incomplete postzygotic isolation had evolved.
 %
-From now on, we refer to these populations as `species.'
+From now on, I refer to these populations as `species.'
 
 
 
@@ -245,39 +245,39 @@ From now on, we refer to these populations as `species.'
 \subsection{Pairwise DMIs increased quadratically through time}
 
 To count the number of pairwise DMIs between two species,
-we separately counted the number of derived-ancestral
+I separately counted the number of derived-ancestral
 and derived-derived DMIs (Fig.~\ref{dmi-count-method}).
 %
-To find derived-ancestral DMIs, we first searched
+To find derived-ancestral DMIs, I first searched
 for single derived alleles of each species
 that were incompatible with the ancestral background
 (e.g., allele~\emph{E} in Fig.~\ref{dmi-count-method}A, step~1).
 %
-We defined an allele as incompatible with the ancestral background
+I defined an allele as incompatible with the ancestral background
 if the fitness of the ancestral genotype with that allele alone
 was $<$~0.75 relative to the original ancestor.
 %
 To determine whether the incompatibility was due to a single ancestral allele
-(thereby forming a derived-ancestral DMI), we searched for another
+(thereby forming a derived-ancestral DMI), I searched for another
 derived allele of the same species that rescued the incompatibility
 (e.g., allele~\emph{C} in Fig.~\ref{dmi-count-method}A, steps~2 and 3).
 %
-We defined an incompatibly as rescued by another allele if the relative fitness
+I defined an incompatibly as rescued by another allele if the relative fitness
 of the ancestral genotype with both alleles was $>$~0.99.
 %
 To ensure that the rescue allele was itself not involved in other DMIs,
-we verified that its fitness in the ancestral background was also $>$~0.99.
+I verified that its fitness in the ancestral background was also $>$~0.99.
 %
-We excluded testing rescue alleles that appeared after the derived allele
+I excluded testing rescue alleles that appeared after the derived allele
 because in a derived-ancestral DMI a derived allele cannot be incompatible
 with any current ancestral alleles (e.g., in Fig.~\ref{dm-model},
 allele~\emph{C} cannot be incompatible with \emph{e}).
 %
-To find derived-derived DMIs, we searched for single derived alleles
+To find derived-derived DMIs, I searched for single derived alleles
 from both species that were each compatible with the ancestral background
 but together were incompatible (Fig.~\ref{dmi-count-method}B).
 %
-Using this two-part method, we counted the total number of pairwise DMIs
+Using this two-part method, I counted the total number of pairwise DMIs
 for each of the 20 replicate pairs of populations every 400 generations.
 
 
@@ -290,13 +290,13 @@ for each of the 20 replicate pairs of populations every 400 generations.
   (\textbf{A}) derived-ancestral
   and (\textbf{B}) derived-derived pairwise DMIs (see text).
   %
-  (\textbf{A}) Step 1: We tested the individual fitness effect
+  (\textbf{A}) Step 1: I tested the individual fitness effect
   of each derived allele (black bars) of a species on the ancestral background.
   %
   Step 2: For each derived allele that
   was incompatible with the ancestral background
   (indicated by the black triangle pointing down),
-  we tested the individual effect of the other derived alleles
+  I tested the individual effect of the other derived alleles
   on that genetic background.
   %
   Step 3: If a second derived allele resulted in high fitness
@@ -304,12 +304,12 @@ for each of the 20 replicate pairs of populations every 400 generations.
   the ancestral allele at that second locus
   was incompatible with the original derived allele.
   %
-  (\textbf{B}) Step 1: We tested the individual fitness effect
+  (\textbf{B}) Step 1: I tested the individual fitness effect
   of each derived allele (gray bars) of a species on the ancestral background.
   %
   Step 2: For each derived allele that
   was compatible with the ancestral background,
-  we tested the individual effect of each derived allele
+  I tested the individual effect of each derived allele
   (itself compatible with the ancestral background) of the other species.
   %
   Step 3: If the second allele lowered the fitness,
@@ -321,17 +321,17 @@ for each of the 20 replicate pairs of populations every 400 generations.
 
 To determine whether a linear ($ax$) or a quadratic ($ax^{2} + bx$) model
 best described the accumulation of pairwise DMIs through time,
-we fit these two models to the whole dataset ($n = 520$)
+I fit these two models to the whole dataset ($n = 520$)
 and to each replicate individually (each $n = 26$).
 %
 Because there are no pairwise DMIs at the moment of geographic isolation,
 the models do not have a constant term (i.e., the intercept is~0).
 %
-We estimated the parameters of each model using maximum likelihood
+I estimated the parameters of each model using maximum likelihood
 with a Gamma distribution for DMIs and compared the models using AIC
 \citep{bol08}.
 %
-We found that the quadratic model explained the whole dataset better
+I found that the quadratic model explained the whole dataset better
 than the linear model (Fig.~\ref{dmi-and-hybrids}A),
 although there was considerable variation per replicate
 (Fig.~\ref{fig:indiv-dmi}).
@@ -384,20 +384,20 @@ was consistent with the snowball effect.
 \subsection{Hybrid inviability increased linearly through time}
 
 To measure hybrid inviability (i.e., number of unfit hybrids) through time,
-we first created 10,000 hybrids between each replicate pair of species
+I first created 10,000 hybrids between each replicate pair of species
 every 400 generations.
 %
 Hybrids were created in the same way Avida recombines two genotypes:
 two random but homologous regions of the parental genomes were exchanged.
 %
 Note that hybrids were created after the experiments were done,
-using the populations we saved every 400 generations;
+using the populations I saved every 400 generations;
 no hybridization between populations occurred during their evolution.
 %
-We then measured the fitness of each hybrid and counted the number
+I then measured the fitness of each hybrid and counted the number
 (out of 10,000) that had a relative fitness $<$~0.75.
 %
-We found that the overall number of unfit hybrids through time
+I found that the overall number of unfit hybrids through time
 increased linearly (Fig.~\ref{dmi-and-hybrids}B),
 although there was considerable variation per replicate
 (Fig.~\ref{fig:indiv-unfit-hybrids}).
@@ -420,7 +420,7 @@ and therefore suggest that the fitness effects of DMIs were not additive.
 
 \subsection{Secondary alleles rescue pairwise DMIs}
 
-%Therefore, we found that in the same experiment
+%Therefore, I found that in the same experiment
 %the mean number of pairwise DMIs increased quadratically,
 %while the mean hybrid inviability increased linearly.
 Previous studies have found a linear increase
@@ -428,12 +428,12 @@ in hybrid inviability through time,
 but conclusions that these results indicate the absence
 of a snowball effect require that DMIs be additive.
 %
-If pairwise DMIs were additive, we would expect that hybrids
+If pairwise DMIs were additive, I would expect that hybrids
 carrying at least one pairwise DMI be unfit
 because a single pairwise DMI should reduce
 the fitness of the carrier to $<$ 0.75.
 %
-We found, however, that not all hybrids
+I found, however, that not all hybrids
 carrying at least one pairwise DMI were unfit
 %(e.g., at the end of the runs, only $\sim$ 25\% of such hybrids were unfit)
 (Fig. \ref{dmi-and-hybrids}C),
@@ -450,14 +450,14 @@ This hypothesis predicts that fit hybrids carrying a pairwise DMI
 are more likely to carry a rescue allele than unfit hybrids.
 %
 To test this prediction,
-we first identified all possible rescue alleles for all known pairwise DMIs
+I first identified all possible rescue alleles for all known pairwise DMIs
 by searching for single derived alleles from either species
 that rescued each known pairwise DMI.
 %
 Then, for hybrids carrying a pairwise DMI (at generation 10,000),
-we calculated the proportion that also carried a rescue allele.
+I calculated the proportion that also carried a rescue allele.
 %
-We found that 97\% of fit hybrids carried a rescue allele
+I found that 97\% of fit hybrids carried a rescue allele
 compared to only 45\% of unfit hybrids.
 %
 This finding suggests that certain alleles rescued pairwise DMIs,
@@ -473,17 +473,17 @@ why the mean hybrid inviability increased only linearly.
 Derived alleles have been predicted to be three times more likely
 than ancestral alleles to be involved in pairwise DMIs \citep{orr95}.
 %
-To test this prediction, we counted the number of times
+To test this prediction, I counted the number of times
 a derived allele appeared in a DMI
 (once in a derived-ancestral DMI and twice in a derived-derived DMI)
 and the number of times an ancestral allele appeared in a DMI
 (once in a derived-ancestral DMI).
 %
-We made these counts at 10,000 generations for each pair of populations,
-and we calculated the mean of the ratios between the number of derived alleles
+I made these counts at 10,000 generations for each pair of populations,
+and I calculated the mean of the ratios between the number of derived alleles
 and ancestral alleles found in all DMIs.
 %
-We found that derived alleles are 3.06 (2.41--3.79, 95\% bootstrap C.I.)
+I found that derived alleles are 3.06 (2.41--3.79, 95\% bootstrap C.I.)
 times more likely than ancestral alleles to appear in pairwise DMIs,
 which experimentally supports the prediction.
 %
@@ -520,7 +520,7 @@ Second, as an evolving population navigates its neutral landscape,
 a derived allele that once caused a DMI may later be replaced
 by an allele that does not cause any DMIs.
 %
-Third, we used the majority-rule consensus sequence
+Third, I used the majority-rule consensus sequence
 of a population for our analyses,
 but alleles in a consensus sequence are not necessarily fixed.
 %
@@ -566,7 +566,7 @@ For example, a genotype that gains a new allele performing
 overlapping functions with another allele at a different locus
 will be more robust to deleterious mutations that affect those functions.
 %
-Although we do not know whether rescue alleles in our system are redundant,
+Although I do not know whether rescue alleles in our system are redundant,
 studies have shown that sexual, complex digital organisms
 with high mutation rates exhibit mutational robustness \citep{len99,wil01,mis06},
 which can evolve by genetic redundancy \citep{ele07}.
@@ -582,7 +582,7 @@ as in the case with the hybrid rescue mutation
 %
 % EXPLAIN FOLLOWING SENTENCE BETTER (Emily Weigel)
 Similarly, if this hypothesis applies
-to the rescue alleles we discovered in digital organisms,
+to the rescue alleles I discovered in digital organisms,
 then any presumed `pairwise' DMI that was rescued by a third allele
 was, in fact, a three-way DMI.
 %
@@ -599,24 +599,24 @@ are common in biological and digital organisms.
 %with the empirical observation of a ``missing snowball.''
 %
 In summary, using an artificial life software
-we found that pairwise DMIs accumulate quadratically through time,
+I found that pairwise DMIs accumulate quadratically through time,
 supporting the snowball effect
 and the Dob\-zhan\-sky-Mul\-ler model of postzygotic isolation.
 %
-In addition, we discovered that the number of derived-ancestral 
+In addition, I discovered that the number of derived-ancestral 
 and derived-derived DMIs are similar,
 suggesting that hybrid inviability due to
 a missing allele in the same species
 were just as likely due to
 incompatible derived alleles between species.
 %
-When we used the strength of postzygotic isolation
+When I used the strength of postzygotic isolation
 as a proxy for the number of DMIs,
-we found a linear, rather than quadratic,
+I found a linear, rather than quadratic,
 relationship with divergence time.
 %
 This discrepancy was at least partially caused by rescue alleles,
-which we found recovered the negative effects of DMIs in hybrids,
+which I found recovered the negative effects of DMIs in hybrids,
 disrupting the pattern of quadratic increase of DMIs.
 %
 Our findings indicate that pairwise DMIs are insufficient
@@ -683,7 +683,7 @@ in the genetics of reproductive isolation.
 %evolutionary processes like natural selection
 %and epistasis occur spontaneously.
 %
-%With Avida, we can
+%With Avida, I can
 %observe millions of generations of evolution in real-time,
 %replicate experiments with identical starting conditions,
 %easily manipulate genomes, and
@@ -721,7 +721,7 @@ Offspring were configured to replace a random organism in the population.
 
 Statistical analyses were carried out using R (ver. 2.15.1) \citep{r13}.
 %
-To perform the AIC analyses, we used the bbmle package \citep{bol08}
+To perform the AIC analyses, I used the bbmle package \citep{bol08}
 and the mle2 function with the `Nelder-Mead' optimization method.
 %
 
@@ -730,7 +730,7 @@ and the mle2 function with the `Nelder-Mead' optimization method.
 
 \section{Acknowledgments}
 
-We thank A. P. Dreyer, E. M. Swanson, R. E. Lenski, J. W. Boughman,
+I thank A. P. Dreyer, E. M. Swanson, R. E. Lenski, J. W. Boughman,
 E. Weigel, E. Dittmar, L. J. Harmon, and D. R. Matute
 for helpful comments on the manuscript.
 %
