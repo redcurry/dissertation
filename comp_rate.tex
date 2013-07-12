@@ -8,10 +8,10 @@
 \section{Introduction}
 
 Deleterious mutations may accumulate in a population
-through various mechanisms: genetic drift \cite{lan94,lyn95},
-hitchhiking with beneficial mutations \cite{chu11},
-transient environmental changes \cite{bjo00},
-and selfish genetic elements \cite{pre10}.
+through various mechanisms: genetic drift \citep{lan94,lyn95},
+hitchhiking with beneficial mutations \citep{chu11},
+transient environmental changes \citep{bjo00},
+and selfish genetic elements \citep{pre10}.
 %
 In these deteriorated populations, new beneficial mutations
 may arise and restore the fitness of the population.
@@ -28,7 +28,7 @@ and the process by which compensatory mutations recover fitness
 is known as `compensatory adaptation.'
 %
 Experimental evolution studies have observed compensatory adaptation
-\cite{har96,bur99,moo00,lev00,mai02,est03,est11}.
+\citep{har96,bur99,moo00,lev00,mai02,est03,est11}.
 
 
 
@@ -38,14 +38,14 @@ and the antibiotic resistance of pathogenic bacteria.
 %
 Theoretical work has shown that small populations
 ($<$~100 individuals) or populations that have undergone bottlenecks
-will readily fix deleterious mutations \cite{whi03}.
+will readily fix deleterious mutations \citep{whi03}.
 %
-There is the risk that such populations will go extinct \cite{lyn95,lan94},
+There is the risk that such populations will go extinct \citep{lyn95,lan94},
 unless compensatory adaptation could help them recover.
 %
 Bacteria susceptible to an antibiotic may acquire resistance mutations
 in the presence of the antibiotic, but such mutations
-are often deleterious in the absence of the antibiotic \cite{sch97,lev00}.
+are often deleterious in the absence of the antibiotic \citep{sch97,lev00}.
 %
 The hope for combating resistant bacteria was to remove the antibiotic,
 so that a competitively superior susceptible strain
@@ -53,7 +53,7 @@ would evolve through reversion.
 %
 Resistant bacteria, however, may instead acquire compensatory mutations
 that remove this fitness deficit while retaining their resistance
-\cite{sch97,lev00,bjo00,mai02,pau07,per10}.
+\citep{sch97,lev00,bjo00,mai02,pau07,per10}.
 %
 In fact, because compensatory mutations often depend on
 the deleterious mutations already present,
@@ -63,12 +63,12 @@ reversion and susceptibility become increasingly difficult.
 
 Experimental studies have found that compensation, rather than reversion,
 often occurs, but reversion is sometimes present or inferred
-\cite{bur99,san05,mai02}.
+\citep{bur99,san05,mai02}.
 %
 The reason that reversion is rare has been argued to be that
 compensatory mutations are much more frequent than revertant mutations
 (i.e., there is only one way to revert, but many ways to compensate)
-\cite{lev00,whi03,san05}.
+\citep{lev00,whi03,san05}.
 %
 One might expect, however, that once the revertant mutation appears
 it would most likely fix because its fitness recovery is 100\%
@@ -79,7 +79,7 @@ exists that once a few compensatory mutations arise and fix,
 the revertant mutation will not provide its full benefits because
 it would interact negatively with compensatory mutations.
 %
-This possibility has been observed experimentally \cite{sch97,lev00}.
+This possibility has been observed experimentally \citep{sch97,lev00}.
 %
 The conflict between compensatory and reversion is a complicated
 interaction involving, at least, the initial fitness of the mutant,
@@ -103,7 +103,7 @@ how many mutations arise each generation.
 %
 Larger populations will increase both the frequency of compensatory mutations
 and that of reversion, and studies have confirmed
-that reversion occurs more frequently in large populations \cite{bur99}.
+that reversion occurs more frequently in large populations \citep{bur99}.
 %
 Like population size, mutation rate also affects the frequency
 in which mutations arise.
@@ -115,7 +115,8 @@ and thus cancel out its benefit.
 
 
 In this study, I used experimental evolution \emph{in silico}
-using the artificial life system Avida \cite{ofr04} (see p. \pageref{sec:avida})
+using the artificial life system Avida \citep{ofr04}
+(see p. \pageref{sec:avida})
 to examine the evolutionary dynamics of compensatory adaptation.
 %
 The use of digital organisms allowed us to answer questions
@@ -128,11 +129,11 @@ easily manipulate genomes,
 and accurately measure fitness.
 %
 Although the system I used is artificial, it has been shown that
-several biological phenomena emerge naturally in Avida \cite{wil02,ada06}.
+several biological phenomena emerge naturally in Avida \citep{wil02,ada06}.
 %
 Digital organisms improve on mathematical models of adaptation
 because in this system traits are complex,
-involving multiple loci and epistatic interactions among alleles \cite{len99}.
+involving multiple loci and epistatic interactions among alleles \citep{len99}.
 
 
 
@@ -202,12 +203,12 @@ there should be more compensatory mutations the lower the initial fitness
 This expectation has been made theoretically from extreme value theory,
 where the tail of any distribution
 (in this case, the distribution of beneficial mutations),
-follows the same extreme value distribution \cite{orr02},
+follows the same extreme value distribution \citep{orr02},
 so the higher the fitness, the fewer beneficial mutations that are found.
 %
-Empirical studies (e.g., \cite{ele98,bur99}) have also shown
+Empirical studies \citep[e.g.,][]{ele98,bur99} have also shown
 that populations with deleterious mutations readily gain
-more beneficial mutations than fit populations \cite{whi00}.
+more beneficial mutations than fit populations \citep{whi00}.
 %
 To test this hypothesis, I introduced every possible single mutation
 on each mutant and counted the number that were fully or partially compensatory
@@ -220,7 +221,7 @@ with low fitness than in those with high fitness (Figure~\ref{fig:comp_avail}).
 These results also confirm that there are more compensatory mutations
 than reversion (which is always exactly one),
 corroborating suggestions that compensation is more likely than reversion
-\cite{mai02}.
+\citep{mai02}.
 
 
 
@@ -687,9 +688,9 @@ indicating that negative epistasis was strongest at higher mutation rate.
 \section{Discussion}
 
 Our results corroborate previous findings that compensatory adaptation
-is a common alternative to reversion \cite{bur99,moo00,lev00,mai02,est11}.
+is a common alternative to reversion \citep{bur99,moo00,lev00,mai02,est11}.
 %
-Levin \emph{et al}. \cite{lev00} stated that ``compensatory evolution
+\citet{lev00} stated that ``compensatory evolution
 establishes an adaptive valley that is difficult to traverse and thus return to
 the ancestral genotype \ldots'' and identified two reasons for this:
 (1) there are more compensatory mutations than a revertant mutation and
@@ -714,17 +715,17 @@ prevented the revertant from spreading in a population.
 
 \subsection{Availability of compensatory mutations}
 
-Moore \emph{et al}. \cite{moo00} and Sanju\'an \emph{et al}. \cite{san05}
+\citet{moo00} and \citet{san05}
 found that low-fitness mutants compensated faster than high-fitness mutants.
 %
-The reason was that, as Moore \emph{et al}. explained,
+The reason was that, as \citet{moo00} explained,
 a compensatory mutation in a low-fitness mutant
 has a higher selective coefficient than in a high-fitness mutant
 (assuming the compensatory mutation increases fitness relative to the mutant
 equally for low-fitness and high-fitness mutants).
 %
 An alternative explanation,
-which Moore \emph{et al}. \cite{moo00} also discussed
+which \citet{moo00} also discussed
 but lacked the evidence to support it,
 was that there may be more compensatory mutations available
 in low-fitness mutants than in high-fitness mutants.
@@ -732,13 +733,13 @@ in low-fitness mutants than in high-fitness mutants.
 In fact, this was exactly what I found
 in our digital mutants (Figure~\ref{fig:comp_avail}).
 %
-Our results support Whitlock \emph{et al.} \cite{whi03},
+Our results support \citet{whi03},
 who said ``when something is broken it is easier to improve than
-when in is fully functional'' and Poon and Chao \cite{poo05},
+when in is fully functional'' and \citet{poo05b},
 who found a positive relationship between the negative effect
 of a deleterious mutation and the probability of compensation.
 %
-The reason for this that Poon and Chao concluded was that
+The reason for this that \citet{poo05b} concluded was that
 ``deleterious mutations with large effects
 on fitness may tend to affect a broader range of phenotypic components.
 Severely deleterious mutations would therefore generate a larger
@@ -747,7 +748,7 @@ mutational target for compensatory interactions.''
 This must be going on in our populations because the more severe
 the deleterious mutation, the more tasks that are being knocked out.
 %
-I did not find, as Sanju\'an \emph{et al}. \cite{san05} found,
+I did not find, as \citet{san05} found,
 that low-fitness mutants improved in fitness more than high-fit mutants
 (Figures~\ref{fig:W_comp}E and \ref{fig:W_comp}F).
 
@@ -757,7 +758,7 @@ that low-fitness mutants improved in fitness more than high-fit mutants
 
 Compensatory mutations depend upon the original deleterious mutation
 they compensate, such that they may be deleterious when the deleterious mutation
-is removed, such as when reversion occurs \cite{sch97,poo05,lev00}.
+is removed, such as when reversion occurs \citep{sch97,poo05,lev00}.
 %
 Negative epistasis between compensatory mutations and revertant mutations
 prevented reversion from being beneficial earlier for low-fitness mutants
@@ -769,7 +770,7 @@ than high-fitness mutants for two reasons.
 The first reason may be that because in low-fitness mutants
 there are many more compensatory mutations available
 than in high-fitness mutants (Figure~\ref{fig:comp_avail}),
-more mutations fix in low-fitness mutants \cite{moo00,san05}, so that
+more mutations fix in low-fitness mutants \citep{moo00,san05}, so that
 when a reversion appears, it does so in the genetic background
 with many mutations, in which there are more chances for negative epistasis.
 %
@@ -785,19 +786,19 @@ I cannot, however, exclude the former, and it is likely going on as well.
 The importance of all this is that as compensatory adaptation proceeds,
 it becomes increasingly harder for reversion to occur,
 and populations are obligated to diverge in unique evolutionary paths
-because typically there are multiple ways to compensate \cite{pau07}.
+because typically there are multiple ways to compensate \citep{pau07}.
 %
 This decreasing probability reversion as compensatory adaptation proceeds
-has been inferred in mammalian evolution \cite{soy12}.
+has been inferred in mammalian evolution \citep{soy12}.
 
 
 
 \subsection{Population size}
 
 Previous studies have generally found that reversion is more common
-in large populations \cite{bur99,arg07}.
+in large populations \citep{bur99,arg07}.
 %
-Burch and Chao \cite{bur99} found that in two of their large populations
+\citet{bur99} found that in two of their large populations
 (1,000 and 10,000) a single step recovered fitness substantially.
 %
 The single step for population 1,000 recovered fitness completely
@@ -808,11 +809,11 @@ could not have been revertant mutations,
 and their smallest populations increased in fitness very slowly.
 %
 Our results corroborate their findings and
-those of Sanju\'an \emph{et al}. \cite{san05} in that
+those of \citet{san05} in that
 the probability of reversion increased with population size
 and the fitness of populations was greater the greater the population size.
 %
-In contrast, Maisnier-Patin \emph{et al}. \cite{mai02} observed that
+In contrast, \citet{mai02} observed that
 compensation happened more readily at greater population size
 (even in the millions), and reversion was hardly observed.
 %
@@ -820,21 +821,21 @@ The difference may have been due to differences in mutation rate:
 viruses and our digital organisms have high mutation rates
 that may have caused revertants to appear more frequently.
 %
-Both Burch and Chao \cite{bur99} and Maisnier-Patin \emph{et al}. \cite{mai02}
+Both \citet{bur99} and \citet{mai02}
 found that fitness was highest when the population size was highest,
 as I did (Figures~\ref{fig:N_comp}E and \ref{fig:N_comp}F).
 %
-However, Estes and Lynch \cite{est03} argued that no reversion occurred in their
+However, \citet{est03} argued that no reversion occurred in their
 study at their population size of about 10,000, possibly because their mutation
 rate was very low ($4.4 \times 10^{-8}$ per nucleotide per generation).
 
 
 
-As Poon and Otto \cite{poo00} found, compensatory mutations help ``freeze''
+As \citet{poo00} found, compensatory mutations help ``freeze''
 the mutational meltdown could have occurred in small populations.
 %
 But there is a limit in population size in which even compensatory adaptation
-cannot save because of the overwhelming effects of drift \cite{poo05}.
+cannot save because of the overwhelming effects of drift \citep{poo05}.
 %
 I found that at population size of 10, many populations decreased in fitness
 as they accumulated deleterious mutations.
@@ -846,11 +847,11 @@ but little can be done about small populations.
 
 \subsection{Mutation rate}
 
-Maisnier-Patin \emph{et al}. \cite{mai02} found that the rate
+\citet{mai02} found that the rate
 of compensatory adaptation in \emph{Salmonella typhimurium}
 was higher in a mutator strain (i.e., higher mutation rate).
 %
-Perron \emph{et al}. \cite{per10} arrived at a similar result
+\citet{per10} arrived at a similar result
 using a mutator strain of \emph{Pseudomonas aeruginosa}.
 %
 Our results corroborate this trend, except at very high mutation rates,
@@ -967,7 +968,7 @@ then the population was said to have reverted.
 The reason I also considered non-ancestral alleles as reversions
 is that substitutions at the mutant locus could represent
 neutral alleles in the original ancestor;
-this ``effective reversion'' is common in some viruses \cite{arg07}.
+this ``effective reversion'' is common in some viruses \citep{arg07}.
 %
 If the fitness of the consensus sequence was higher than the
 mutant sequence and the allele was not the ancestral allele,
