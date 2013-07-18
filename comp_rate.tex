@@ -909,7 +909,7 @@ but very small populations are likely to decline in fitness.
 \subsection{Evolution of ancestors}
 
 Starting with a digital organism with a genome length of 200,
-I derived 20 asexual and 20 sexual ancestral populations.
+I derived 20 asexual ancestral populations.
 %
 This initial organism could reproduce but could not perform any tasks.
 %
@@ -921,25 +921,21 @@ re-configured to add the bonus for each task performed,
 rather than multiply its power of two.
 %
 I allowed 20 replicate asexual populations
-and 20 replicate sexual populations
 to evolve for 500,000 updates ($\sim$~40,000 generations).
 %
-I then chose two asexual and two sexual populations
+I then chose two asexual populations
 whose consensus sequence could perform all nine tasks.
 %
-The consensus sequences of these four populations
+The consensus sequences of these two populations
 served as the ancestral genotypes from which mutants were derived.
 
 
 \subsection{Construction and evolution of mutants}
 
 From each ancestor, I generated every possible single mutant (5,000)
-and, for the asexual ancestors, chose five pairs of mutants,
+and chose five pairs of mutants,
 each pair with the following relative fitnesses:
 0.1, 0.3, 0.5, 0.7, and 0.9 ($\pm$~0.025).
-%
-For the sexual ancestors, I chose two mutants
-with relative fitnesses of 0.5 ($\pm$~0.025).
 %
 I ensured that the only allele at the mutant locus
 that could fully recover fitness was the ancestral, revertant, allele.
@@ -948,8 +944,7 @@ If I could not find mutants with the above conditions for any ancestor,
 I chose another ancestral genotype that could perform all nine tasks
 and repeated the method for generating mutants.
 %
-In total, I obtained 24 mutants: 10 for each of the two asexual ancestors
-and two for each of the sexual ancestors.
+In total, I obtained 20 mutants: 10 for each of the two asexual ancestors.
 
 
 \subsection{Detection of compensatory adaptation}
