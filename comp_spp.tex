@@ -362,7 +362,7 @@ contributed to postzygotic reproductive isolation.
 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{fig3.png}
+%\includegraphics[width=\linewidth]{fig3.png}
 \caption{Fitness of hybrids with intermediate parental contributions
   of deleterious and compensatory mutations.
   (A) Mean fitness of hybrids between the ancestor
@@ -671,5 +671,12 @@ and do not necessarily reflect the views of the National Science Foundation.
 \begin{lit_cited}
 \end{lit_cited}
 
+% Temporarily remove section number from bibliography title
+\renewcommand\bibsection{\center\section*{\bibname}}
+
 \bibliographystyle{apalike}
 \bibliography{comp_spp}
+
+\renewcommand\bibsection{\section{\bibname}}
+
+\addcontentsline{toc}{section}{LITERATURE CITED}

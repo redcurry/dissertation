@@ -747,5 +747,12 @@ and do not necessarily reflect the views of the National Science Foundation.
 \begin{lit_cited}
 \end{lit_cited}
 
+% Temporarily remove section number from bibliography title
+\renewcommand\bibsection{\center\section*{\bibname}}
+
 \bibliographystyle{apalike}
 \bibliography{snowball}
+
+\renewcommand\bibsection{\section{\bibname}}
+
+\addcontentsline{toc}{section}{LITERATURE CITED}
