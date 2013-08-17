@@ -247,7 +247,7 @@
     \fi
    \chapter*{\vspace{-2.5\baselineskip}\centerline{\large \MakeUppercase
    \listtablename}} 
-   \addcontentsline{toc}{chapter}{\textbf{List of Tables}\vspace{\baselineskip}}%
+   \addcontentsline{toc}{chapter}{\textbf{LIST OF TABLES}\vspace{\baselineskip}}%
       \@mkboth{\MakeUppercase\listtablesname}%
               {\MakeUppercase\listtablename}%
    \begin{singlespace} 
@@ -275,7 +275,7 @@
       \@restonecolfalse
     \fi
    \chapter*{\vspace{-2.5\baselineskip}\centerline{\large \MakeUppercase\listfigurename}} 
-   \addcontentsline{toc}{chapter}{\textbf{List of Figures}\vspace{\baselineskip}}%
+   \addcontentsline{toc}{chapter}{\textbf{LIST OF FIGURES}\vspace{\baselineskip}}%
       \@mkboth{\MakeUppercase\listfigurename}%
               {\MakeUppercase\listfigurename}%
    \begin{singlespace} 
