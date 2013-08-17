@@ -15,6 +15,16 @@
 \renewcommand\bibname{LITERATURE CITED}
 \renewcommand\bibsection{\section{\bibname}}
 
+% Define the Copyright Page
+\newenvironment{lit_cited}{%
+\newpage
+\vspace*{\fill}
+\begin{center}
+LITERATURE CITED
+\end{center}
+\vfill}
+{\newpage}
+     
 \title{Mechanisms of adaptation and speciation:\protect\\
   an experimental study using artificial life}
 
