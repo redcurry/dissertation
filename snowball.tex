@@ -213,32 +213,15 @@ the genetic divergence between replicate populations
 was mostly due to fixation of neutral mutations.
 %
 Thus, the rate of substitution for each population
-was approximately constant (Fig.~\ref{avida}C),
+was approximately constant,
 satisfying an assumption of the snowball effect
 when it is analyzed through time \citep{orr95}.
 %
 The mean relative fitness of hybrids between pairs of populations
-at the end of the runs was 0.91 (range: 0.68--0.97) (Fig.~\ref{avida}D),
+at the end of the runs was 0.91 (range: 0.68--0.97),
 indicating that incomplete postzygotic isolation had evolved.
 %
 From now on, I refer to these populations as `species.'
-
-
-
-\begin{figure}[p]
-\begin{center}
-\includegraphics[width=5in]{avida.pdf}
-\end{center}
-\caption{
-  (\textbf{A}) Fitness distribution of all possible single mutants
-    of an evolved digital organism.
-  (\textbf{B}) Proportions of epistasis types for an evolved digital organism.
-  (\textbf{C}) Number of substitutions for each population through time
-    (gray lines: individual replicates; black line: mean of replicates).
-  (\textbf{D}) Fitness of hybrids between populations through time
-    (gray lines: individual replicates; black line: mean of replicates).}
-\label{avida}
-\end{figure}
 
 
 
@@ -333,8 +316,7 @@ with a Gamma distribution for DMIs and compared the models using AIC
 %
 I found that the quadratic model explained the whole dataset better
 than the linear model (Fig.~\ref{dmi-and-hybrids}A),
-although there was considerable variation per replicate
-(Fig.~\ref{fig:indiv-dmi}).
+although there was considerable variation per replicate.
 %
 These results indicate that the overall accumulation of pairwise DMIs
 was consistent with the snowball effect.
@@ -343,7 +325,7 @@ was consistent with the snowball effect.
 
 \begin{figure}
 \begin{center}
-\includegraphics[height=6in]{dmi-and-hybrids.pdf}
+\includegraphics[width=3.5in]{dmi-and-hybrids.pdf}
 \end{center}
 \caption{
   (\textbf{A}) Mean number of pairwise DMIs through time.
@@ -357,27 +339,11 @@ was consistent with the snowball effect.
   Each point represents the mean of 20 replicate runs.
   The black line represents the linear model of the data
   with parameters estimated using maximum likelihood.
-  The gray lines represent the bootstrap 95\% confidence intervals of the means.
-  %
-  (\textbf{C}) Mean number of all hybrids () %find a circle symbol; $\medcirc$)
-  and unfit hybrids ($\triangle$) (out of 10,000)
-  with at least one pairwise DMI through time.
-  Each point represents the mean of 20 replicate runs.
-  The gray lines represent the bootstrap 95\%
-  confidence intervals of the means.}
+  The gray lines represent the bootstrap
+  95\% confidence intervals of the means.}
 \label{dmi-and-hybrids}
 \end{figure}
 
-
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.9\linewidth]{dmi-counts-indiv-plots.pdf}
-\end{center}
-\caption{Number of pairwise DMIs through time
-  between each replicate pair of populations.}
-\label{fig:indiv-dmi}
-\end{figure}
 
 
 
@@ -399,22 +365,10 @@ I then measured the fitness of each hybrid and counted the number
 %
 I found that the overall number of unfit hybrids through time
 increased linearly (Fig.~\ref{dmi-and-hybrids}B),
-although there was considerable variation per replicate
-(Fig.~\ref{fig:indiv-unfit-hybrids}).
+although there was considerable variation per replicate.
 %
 These results are consistent with a missing snowball for hybrid inviability
 and therefore suggest that the fitness effects of DMIs were not additive.
-
-
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.9\linewidth]{unfit-hybrid-counts-indiv-plots.pdf}
-\end{center}
-\caption{Number of unfit hybrids (out of 10,000) through time
-  between each replicate pair of populations.}
-\label{fig:indiv-unfit-hybrids}
-\end{figure}
 
 
 
@@ -436,7 +390,7 @@ the fitness of the carrier to $<$ 0.75.
 I found, however, that not all hybrids
 carrying at least one pairwise DMI were unfit
 %(e.g., at the end of the runs, only $\sim$ 25\% of such hybrids were unfit)
-(Fig. \ref{dmi-and-hybrids}C),
+(Fig. \ref{all-and-unfit-hybrids}),
 indicating that pairwise DMIs were not additive.
 %may interact
 %with other derived alleles that rescue the incompatibilities.
@@ -464,6 +418,23 @@ This finding suggests that certain alleles rescued pairwise DMIs,
 and this complex interaction could explain
 why pairwise DMIs were not additive and therefore
 why the mean hybrid inviability increased only linearly.
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.5in]{all-and-unfit-hybrids.pdf}
+\end{center}
+\caption{
+  Mean number of all hybrids ($\ocircle$)
+  and unfit hybrids ($\triangle$) (out of 10,000)
+  with at least one pairwise DMI through time.
+  Each point represents the mean of 20 replicate runs.
+  The gray lines represent the bootstrap 95\%
+  confidence intervals of the means.}
+\label{all-and-unfit-hybrids}
+\end{figure}
+
 
 
 % Accumulation of DA vs DD DMIs
@@ -746,6 +717,7 @@ and do not necessarily reflect the views of the National Science Foundation.
 
 \begin{lit_cited}
 \end{lit_cited}
+\addcontentsline{toc}{section}{LITERATURE CITED}
 
 % Temporarily remove section number from bibliography title
 \renewcommand\bibsection{\center\section*{\bibname}}
@@ -754,5 +726,3 @@ and do not necessarily reflect the views of the National Science Foundation.
 \bibliography{snowball}
 
 \renewcommand\bibsection{\section{\bibname}}
-
-\addcontentsline{toc}{section}{LITERATURE CITED}

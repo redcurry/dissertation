@@ -542,10 +542,11 @@ evolving neutrally in the ancestral environment (drift treatment):
 the mean hybrid fitness was $>$~0.99 at all migration rates.
 
 
-
+\begin{landscape}
 \begin{figure}
+\thispagestyle{empty}
 \centering
-\includegraphics[width=0.95\linewidth]{hybrid_fitness.pdf}
+\includegraphics[width=\linewidth]{hybrid_fitness.pdf}
 \caption{Mean fitness of hybrids (y-axis)
   between populations evolved under various migration rates (x-axis)
   and different treatments (markers and lines):
@@ -562,6 +563,7 @@ the mean hybrid fitness was $>$~0.99 at all migration rates.
   up to 100 regions were exchanged.}
 \label{hybrid_fitness}
 \end{figure}
+\end{landscape}
 
 
 
@@ -697,7 +699,7 @@ High & Mutation-order 2 & 0.3758$^{f}$ & 0.0199$^{b}$ \\
 
 \begin{figure}
 \centering
-\includegraphics[height=5in]{task-muts.pdf}
+\includegraphics[height=6in]{task-muts.pdf}
 \caption{Consensus sequences of the first five evolved replicate pairs of demes
   in the mutation-order~1 treatment under zero migration (top)
   and 0.01 migration (bottom).
@@ -767,7 +769,7 @@ could perform no tasks or just one task
 
 \begin{figure}
 \centering
-\includegraphics[width=0.95\linewidth]{hybrid_counts.pdf}
+\includegraphics[width=\linewidth]{hybrid_counts.pdf}
 \caption{Number of hybrids able to perform certain tasks (see Methods) for
   the (A) ecological, (B) mutation-order-1, and (C) mutation-order-2 treatments
   under zero migration, low dimensionality, and two-point crossover.
@@ -788,7 +790,7 @@ could perform no tasks or just one task
 
 \begin{figure}
 \centering
-\includegraphics[width=0.95\linewidth]{fit_hybrid_components.pdf}
+\includegraphics[width=3.5in]{fit_hybrid_components.pdf}
 \caption{Number of fit hybrids (i.e., can perform two tasks)
   whose parental components can perform certain tasks (see Methods)
   for the (A) mutation-order 1 and (B) mutation-order 2 treatments
@@ -1103,6 +1105,7 @@ and do not necessarily reflect the views of the National Science Foundation.
 
 \begin{lit_cited}
 \end{lit_cited}
+\addcontentsline{toc}{section}{LITERATURE CITED}
 
 % Temporarily remove section number from bibliography title
 \renewcommand\bibsection{\center\section*{\bibname}}
@@ -1111,5 +1114,3 @@ and do not necessarily reflect the views of the National Science Foundation.
 \bibliography{geo_ecol_spp}
 
 \renewcommand\bibsection{\section{\bibname}}
-
-\addcontentsline{toc}{section}{LITERATURE CITED}
