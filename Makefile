@@ -8,6 +8,7 @@ dissertation.pdf: dissertation.tex abstract.tex acknowledgments.tex intro.tex co
 	bibtex snowball
 	pdflatex dissertation
 	pdflatex dissertation
+	pdflatex dissertation
 
 clean:
 	rm dissertation.pdf dissertation.out *.aux *.bbl *.log *.toc *.lot *.lof *.blg
